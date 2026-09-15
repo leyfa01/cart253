@@ -1,10 +1,10 @@
 # Cart 253 Fall 2026
 
-![alt](images/Banner-image.png)
+![Blue-Banner](images/Banner-image.png)
 
-This website collects and showcases my prototyping work during the course while documenting my progress and learning
+This website collects and showcases my prototyping work during the course while documenting my progress and learning.
 
-## Sub-section
+## Useful links !
 
 [Journal](journal.md)
 
