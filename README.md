@@ -5,3 +5,9 @@
 This website collects and showcases my prototyping work during the course while documenting my progress and learning
 
 ## Sub-section
+
+[Journal](journal.md)
+
+## All my prototypes
+
+Future prototypes
