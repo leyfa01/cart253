@@ -2,7 +2,7 @@
 
 ![Blue-Banner](images/Banner-image.png)
 
-This website collects and showcases my prototyping work during the course while documenting my progress and learning.
+:sparkles: This website collects and showcases my prototyping work during the course while documenting my progress and learning. :sparkles:
 
 ## Useful links !
 
@@ -10,4 +10,4 @@ This website collects and showcases my prototyping work during the course while 
 
 ## All my prototypes
 
-Future prototypes
+_Future prototypes_
