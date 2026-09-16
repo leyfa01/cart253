@@ -23,6 +23,7 @@ function setup() {
 function draw() {
   background(255, 204, 0);
   sky();
+  sun();
   mountainLeft();
   mountainRight();
   
@@ -47,6 +48,13 @@ function mountainRight(){
   fill(150, 90, 0);
   noStroke();
   triangle(228, 150, 284, 40, 340, 150);
+  pop();
+}
+function sun(){
+  push();
+  fill(255, 204, 0);
+  noStroke();
+  ellipse(310, 65, 100, 100);
   pop();
 }
 
