@@ -29,6 +29,7 @@ function draw() {
   birdBeak();
   tail();
   birdBody();
+  tent();
   
   
 }
@@ -101,8 +102,31 @@ function birdBeak(){
 }
 
 function tent(){
-  push();
+
+  // The green tent
+  push(); 
   fill("green");
-  triangle(60, 150, 116, 40, 172, 150);
+  triangle(180, 280, 265, 120, 350, 280);
+  pop();
+
+  // Inside the green tent
+  push();
+  fill("black");
+  triangle(210, 280, 265, 180, 320, 280);
+  pop();
+
+  // Rope of the light inside the tent
+  push();
+  fill("beige")
+  noStroke();
+  rect(262  , 179, 5 , 30);
+  pop();
+
+  // Bulb
+  push();
+  fill("yellow");
+  noStroke();
+  ellipse(265, 215, 20, 30);
   pop();
 }
+
