@@ -26,6 +26,9 @@ function draw() {
   sun();
   mountainLeft();
   mountainRight();
+  birdBeak();
+  tail();
+  birdBody();
   
   
 }
@@ -57,4 +60,49 @@ function sun(){
   ellipse(310, 65, 100, 100);
   pop();
 }
+function tail(){
+  push();
+  fill(100,0,0);
+  noStroke();
+  triangle(40, 40, 85, 60, 100, 50);
+  pop();
+}
 
+
+function birdBody(){
+  // Green body of the bird
+  push(); 
+  fill(100,200,0);
+  noStroke();
+  ellipse(50, 40, 50, 40);
+  pop();
+
+  // Black eye of the bird
+  push();
+  fill(0,0,0);
+  noStroke();
+  ellipse(40, 35, 10, 10);
+  pop();
+
+  // Wing of the bird
+  push();
+  fill("red");
+  noStroke();
+  triangle(45, 40, 60, 50, 70, 40);
+  pop();
+
+}
+function birdBeak(){
+  push();
+  fill(200,200,100);
+  noStroke();
+  triangle(30, 50, 10, 30, 40, 30);
+  pop();
+}
+
+function tent(){
+  push();
+  fill("green");
+  triangle(60, 150, 116, 40, 172, 150);
+  pop();
+}
