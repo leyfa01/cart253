@@ -1,8 +1,8 @@
-# TITLE OF PROJECT
+# CAT LOST IN THE DESERT - INSTRUCTIONS CHALLENGE
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/instructions-challenge/)
 
 ## Description
 

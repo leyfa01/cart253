@@ -1,24 +1,22 @@
 /**
- * Title of Project
+ * Instructions challenge - Cat lost in the desert
  * Leyna Feknous
  *
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is my instruction challenge and there's a cat that is unfortunatly lost in the desert
+ * and having just a tent to survive
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creating canvas
  */
 function setup() {
   createCanvas(400, 300);
-  
-
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Drawing all the part of the desert with the cat
  */
 function draw() {
   background(255, 204, 0);
@@ -36,10 +34,11 @@ function draw() {
   catRightEars();
   leftPaw();
   rightPaw();
-  
-  
-  
 }
+
+/**
+ * Function that will create a blue sky at the top of the canvas
+ */
 function sky() {
   push();
   fill(173, 216, 230);
@@ -47,47 +46,63 @@ function sky() {
   rect(0, 0, 400, 150);
   pop();
 }
-function mountainLeft(){
+/**
+ * Function that will put a brown mountain on the left
+ */
+function mountainLeft() {
   push();
   fill(150, 90, 0);
   noStroke();
   triangle(60, 150, 116, 40, 172, 150);
   pop();
 }
-function mountainRight(){
+/**
+ * Function that will put a brown mountain on the right
+ */
+function mountainRight() {
   push();
   fill(150, 90, 0);
   noStroke();
   triangle(228, 150, 284, 40, 340, 150);
   pop();
 }
-function sun(){
+
+/**
+ * Creating the sun
+ */
+function sun() {
   push();
   fill(255, 204, 0);
   noStroke();
   ellipse(310, 65, 100, 100);
   pop();
 }
-function tail(){
+
+/**
+ * The red tail of the bird
+ */
+function tail() {
   push();
-  fill(100,0,0);
+  fill(100, 0, 0);
   noStroke();
   triangle(40, 40, 85, 60, 100, 50);
   pop();
 }
 
-
-function birdBody(){
+/**
+ * All part on the body of the bird
+ */
+function birdBody() {
   // Green body of the bird
-  push(); 
-  fill(100,200,0);
+  push();
+  fill(100, 200, 0);
   noStroke();
   ellipse(50, 40, 50, 40);
   pop();
 
   // Black eye of the bird
   push();
-  fill(0,0,0);
+  fill(0, 0, 0);
   noStroke();
   ellipse(40, 35, 10, 10);
   pop();
@@ -98,20 +113,25 @@ function birdBody(){
   noStroke();
   triangle(45, 40, 60, 50, 70, 40);
   pop();
-
 }
-function birdBeak(){
+
+/**
+ * His mouth
+ */
+function birdBeak() {
   push();
-  fill(200,200,100);
+  fill(200, 200, 100);
   noStroke();
   triangle(30, 50, 10, 30, 40, 30);
   pop();
 }
 
-function tent(){
-
+/**
+ * Creating all the part of the tent
+ */
+function tent() {
   // The green tent
-  push(); 
+  push();
   fill("green");
   triangle(180, 280, 265, 120, 350, 280);
   pop();
@@ -124,9 +144,9 @@ function tent(){
 
   // Rope of the light inside the tent
   push();
-  fill("beige")
+  fill("beige");
   noStroke();
-  rect(262  , 179, 5 , 30);
+  rect(262, 179, 5, 30);
   pop();
 
   // Bulb
@@ -137,44 +157,45 @@ function tent(){
   pop();
 }
 
-function catFace(){
+/**
+ * Creating all the part of the head of the cat
+ */
+function catFace() {
   // Head of the orange cat
   push();
-  fill("orange")
+  fill("orange");
   noStroke();
-  ellipse(115, 215, 40 , 40);
+  ellipse(115, 215, 40, 40);
   pop();
 
-
-// Left eye of the cat
+  // Left eye of the cat
   push();
-  fill("white")
-  ellipse(108, 212, 8 , 15);
+  fill("white");
+  ellipse(108, 212, 8, 15);
   pop();
 
   // Left Iris of the cat
   push();
-  fill("black")
-  ellipse(108, 215, 7 , 7);
+  fill("black");
+  ellipse(108, 215, 7, 7);
   pop();
-  
 
   // Right eye of the cat
   push();
-  fill("white")
-  ellipse(122, 212, 8 , 15);
+  fill("white");
+  ellipse(122, 212, 8, 15);
   pop();
 
   // Right Iris of the cat
   push();
-  fill("black")
-  ellipse(122, 215, 7 , 7);
+  fill("black");
+  ellipse(122, 215, 7, 7);
   pop();
 
   // Nose of the cat
   push();
   noStroke();
-  fill("red")
+  fill("red");
   triangle(112, 220, 115, 225, 118, 220);
   pop();
 
@@ -182,50 +203,55 @@ function catFace(){
   push();
   fill("red");
   noStroke();
-  ellipse(115, 230, 15, 8)
+  ellipse(115, 230, 15, 8);
   pop();
-  
 }
-function catLeftEars(){
+/**
+ * Function that will create his left ear
+ */
+function catLeftEars() {
   push();
   fill("orange");
   noStroke();
   triangle(95, 210, 110, 195, 100, 180);
   pop();
-  
 }
-
-function catRightEars(){
+/**
+ * Function that will create his right ear
+ */
+function catRightEars() {
   push();
   fill("orange");
   noStroke();
   triangle(135, 207, 120, 195, 130, 180);
   pop();
-  
 }
 // Body of the cat
-function catBody(){
+function catBody() {
   push();
   noStroke();
-  fill("orange")
-  ellipse(115, 250, 50 , 60);
+  fill("orange");
+  ellipse(115, 250, 50, 60);
   pop();
 }
 
-function leftPaw(){
+/**
+ * Function that will create his left paw
+ */
+function leftPaw() {
   push();
   noStroke();
-  fill("orange")
-  ellipse(95, 277, 20 , 10);
+  fill("orange");
+  ellipse(95, 277, 20, 10);
   pop();
-
 }
-function rightPaw(){
+/**
+ * Function that will create his right paw
+ */
+function rightPaw() {
   push();
   noStroke();
-  fill("orange")
-  ellipse(135, 277, 20 , 10);
+  fill("orange");
+  ellipse(135, 277, 20, 10);
   pop();
-
 }
-
