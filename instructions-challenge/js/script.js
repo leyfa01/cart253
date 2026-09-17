@@ -30,6 +30,9 @@ function draw() {
   tail();
   birdBody();
   tent();
+  catBody();
+  catFace();
+  
   
   
 }
@@ -130,3 +133,51 @@ function tent(){
   pop();
 }
 
+function catFace(){
+  // Head of the orange cat
+  push();
+  fill("orange")
+  ellipse(115, 215, 40 , 40);
+  pop();
+
+
+// Left eye of the cat
+  push();
+  fill("white")
+  ellipse(108, 212, 8 , 15);
+  pop();
+
+  // Left Iris of the cat
+  push();
+  fill("black")
+  ellipse(108, 215, 7 , 7);
+  pop();
+  
+
+  // Right eye of the cat
+  push();
+  fill("white")
+  ellipse(122, 212, 8 , 15);
+  pop();
+
+  // Right Iris of the cat
+  push();
+  fill("black")
+  ellipse(122, 215, 7 , 7);
+  pop();
+
+  // Nose of the cat
+  push();
+  noStroke();
+  fill("red")
+  triangle(112, 220, 115, 225, 118, 220);
+  pop();
+  
+}
+// Body of the cat
+function catBody(){
+  push();
+  fill("orange")
+  ellipse(115, 250, 50 , 60);
+  pop();
+}
