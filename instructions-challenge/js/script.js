@@ -34,6 +34,8 @@ function draw() {
   catFace();
   catLeftEars();
   catRightEars();
+  leftPaw();
+  rightPaw();
   
   
   
@@ -208,4 +210,21 @@ function catBody(){
   fill("orange")
   ellipse(115, 250, 50 , 60);
   pop();
+}
+
+function leftPaw(){
+  push();
+  noStroke();
+  fill("orange")
+  ellipse(95, 277, 20 , 10);
+  pop();
+
+}
+function rightPaw(){
+  push();
+  noStroke();
+  fill("orange")
+  ellipse(135, 277, 20 , 10);
+  pop();
+
 }
