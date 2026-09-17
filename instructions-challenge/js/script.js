@@ -228,3 +228,6 @@ function rightPaw(){
   pop();
 
 }
+function catLeftHand(){
+  
+}
