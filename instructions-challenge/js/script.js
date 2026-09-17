@@ -32,6 +32,8 @@ function draw() {
   tent();
   catBody();
   catFace();
+  catLeftEars();
+  catRightEars();
   
   
   
@@ -137,6 +139,7 @@ function catFace(){
   // Head of the orange cat
   push();
   fill("orange")
+  noStroke();
   ellipse(115, 215, 40 , 40);
   pop();
 
@@ -172,11 +175,36 @@ function catFace(){
   fill("red")
   triangle(112, 220, 115, 225, 118, 220);
   pop();
+
+  // Mouth of the cat
+  push();
+  fill("red");
+  noStroke();
+  ellipse(115, 230, 15, 8)
+  pop();
+  
+}
+function catLeftEars(){
+  push();
+  fill("orange");
+  noStroke();
+  triangle(95, 210, 110, 195, 100, 180);
+  pop();
+  
+}
+
+function catRightEars(){
+  push();
+  fill("orange");
+  noStroke();
+  triangle(135, 207, 120, 195, 130, 180);
+  pop();
   
 }
 // Body of the cat
 function catBody(){
   push();
+  noStroke();
   fill("orange")
   ellipse(115, 250, 50 , 60);
   pop();
