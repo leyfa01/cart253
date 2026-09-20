@@ -9,7 +9,7 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas where the solar system will be drawn
  */
 function setup() {
   createCanvas(900, 500);
@@ -17,7 +17,8 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ *Draws the space background and calls each function to display
+ *the Sun and the eight planets
  */
 function draw() {
   background(0, 50, 130);
@@ -31,7 +32,9 @@ function draw() {
   uranus();
   neptune();
 }
-
+/**
+ * Draws the Sun on the right side of the canvas
+ */
 function sun(){
   push();
   fill(200,110,30);
@@ -81,7 +84,7 @@ function jupiter(){
 }
 
 function saturn(){
-  //  ring
+  //  Saturn's ring
   push();
   noFill();
   stroke(230, 220, 160);
@@ -89,7 +92,7 @@ function saturn(){
   ellipse(290, 250, 150, 30)
   pop();
 
-  // planet
+  // Saturn
   push();
   fill(250,250,224);
   noStroke();
