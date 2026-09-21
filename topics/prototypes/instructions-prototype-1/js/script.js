@@ -45,7 +45,7 @@ function sun(){
 
 function mercury(){
   push();
-  fill(200,200,2000);
+  fill(200,200,200);
   noStroke();
   ellipse(765, 250, 20, 20);
   pop();
