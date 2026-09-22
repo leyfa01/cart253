@@ -23,8 +23,9 @@ function setup() {
 function draw() {
     background(200);
     sadRobot();
-    happyRobot();
+    neutralRobot();
     angryRobot();
+    happyRobot();
     
 }
 
@@ -114,7 +115,7 @@ function sadRobot(){
     pop();
 }
 
-function happyRobot(){
+function neutralRobot(){
     
     // left eye
     push();
@@ -247,4 +248,74 @@ function angryRobot(){
     rotateX(1.3);
     box(20,90,20);
     pop();  
+}
+
+function happyRobot(){  
+    // left eye
+    push();
+    translate(150,-50,-60);
+    pointLight(0, 200, 0, 400,0, 0);
+    sphere(40,40,5);
+    pop();
+    
+    // right eye
+    push();
+    translate(150,-50,60);
+    pointLight(0, 200, 0, 400,0, 0);
+    sphere(40,40,5);
+    pop();
+
+    // left eye contour
+    push();
+    fill(0,0,0);
+    translate(160,-50,-60);
+    rotateY(-1.5);
+    torus(35, 15,)
+    pop();
+
+    // right eye contour
+    push();
+    fill(0,0,0);
+    noStroke();
+    translate(160,-50,60);
+    rotateY(1.5);
+    torus(35, 15,)
+    pop();
+    
+    // mouth
+    push();
+    translate(150,70,0);
+    box(50,50);
+    pop();
+
+    // right side of the mouth
+    push();
+    translate(150,70,50);
+    box(50,50);
+    pop();
+
+    // left side of the mouth
+    push();
+    translate(150,70,-50);
+    box(50,50);
+    pop();
+
+    // right eyebrow
+    push();
+    translate(140,-90,-70);
+    fill(0,0,0);
+    rotateX(1.6);
+    rotateY(5);
+    torus(50,5);
+    pop();
+
+    // left eyebrow
+    push();
+    translate(140,-90,70);
+    fill(0,0,0);
+    rotateX(1.6);
+    rotateY(5);
+    torus(50,5);
+    pop();  
+
 }
