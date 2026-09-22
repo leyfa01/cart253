@@ -1,8 +1,8 @@
-# TITLE OF PROJECT
+# The Solar System - representational prototype
 
 Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/instructions-prototype-1/)
 
 ## Description
 
