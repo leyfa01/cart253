@@ -2,8 +2,8 @@
  * Title of Project
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An exploration of geometric shapes using different sizes, colors, layers, and rotations
+ * 
  */
 
 "use strict";
@@ -23,6 +23,8 @@ function draw() {
     background(250,170,180);
     circles();
     rectangles();
+    funLine();
+    ball();
 }
 
 function circles(){
@@ -34,10 +36,10 @@ function circles(){
     pop();
 
     push();
-    ellipseMode(CORNER);
     noStroke();
-    fill(300);
-    ellipse(50, 50, 100, 100);
+    translate(110,70);
+    fill("purple");
+    sphere();
     pop();
 }
 
@@ -52,12 +54,28 @@ function rectangles(){
     pop();
 
     push();
-    rectMode(CENTER);
-    fill(200, 250, 0);
-    translate(-100,-100);
-    noStroke();
-    rotateZ(1);
-    rect(0, 0, 70,70);
+    strokeWeight(0.2);
+    translate(-100, -100, 0);
+    box();
+    orbitControl();
+    pop();
     
+}
+
+function funLine(){
+    push();
+    noFill();
+    stroke(125, 120, 200);
+    strokeWeight(6);
+    bezier(100, -200, -90, -300, 190, 190, -150, 180);
+    pop();
+}
+function ball(){
+    push();
+    strokeWeight(0.3);
+    colorMode(RGB, 100);
+    fill(100, 100, 60);
+    translate(120, -120, 10);
+    sphere(50,15,2);
     pop();
 }
