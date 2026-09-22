@@ -2,7 +2,7 @@
 
 Leyna Feknous
 
-[View this project online](index.html)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-1/)
 
 ## Description
 

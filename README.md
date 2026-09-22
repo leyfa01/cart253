@@ -14,25 +14,33 @@
 
 ## All my prototypes
 
-### Instructions assignement
+## Instructions assignement
 
-<div align="center">
-<img src="images/instruction-prototype-1.png" alt="screenshot" width="400">
+<div>
+<img src="images/instruction-prototype-1.png" alt="screenshot" width="200">
 </div>
+
+### The Solar System
 
 [The Solar System](topics/prototypes/instructions/instructions-prototype-1/)
+[The Solar System Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-1/)
 
-<div align="center">
-<img src="images/instruction-prototype-2.png" alt="screenshot" width="400">
-</div>
-[Geometric Chaos](cart253/topics/prototypes/instructions/instructions-prototype-2/index.html)
-
-[Geometric Chaos repositary](topics/prototypes/instructions/instructions-prototype-2/)
-
-<div align="center">
-<img src="images/instruction-prototype-3.png" alt="screenshot" width="400">
+<div>
+<img src="images/instruction-prototype-2.png" alt="screenshot" width="200">
 </div>
 
-[Mood Bot](topics/prototypes/instructions/instructions-prototype-3/index.html)
+### Geometric Chaos
 
-[Mood Bot repositary](topics/prototypes/instructions/instructions-prototype-3/)
+[Geometric Chaos](topics/prototypes/instructions/instructions-prototype-2/)
+
+[Geometric Chaos Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-2/)
+
+<div>
+<img src="images/instruction-prototype-3.png" alt="screenshot" width="200">
+</div>
+
+### Mood Bot
+
+[Mood Bot](topics/prototypes/instructions/instructions-prototype-3/)
+
+[Mood Bot Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-3/)
