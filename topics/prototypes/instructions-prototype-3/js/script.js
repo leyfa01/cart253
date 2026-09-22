@@ -1,15 +1,16 @@
 /**
- * Title of Project
+ * Mood Bot - instruction- prototype 3
  * Leyna feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A robot created with 3D shapes to explore different emotions. 
+ * Each face uses changes in the eyes, eyebrows, mouth, colors, and rotations to represent expressions 
+ * like happy, sad, neutral, and angry.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Created a canva and added WEBGL to display 3D shapes
 */
 function setup() {
     createCanvas(600,600, WEBGL);
@@ -18,7 +19,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ *  Added a grey background and called different functions to display all the robot faces.
 */
 function draw() {
     background(200);
