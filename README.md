@@ -24,7 +24,7 @@
 
 [The Solar System](topics/prototypes/instructions/instructions-prototype-1/)
 
-[The Solar System Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-1/)
+[The Solar System Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-1/)
 
 ### Geometric Chaos
 
@@ -34,7 +34,7 @@
 
 [Geometric Chaos](topics/prototypes/instructions/instructions-prototype-2/)
 
-[Geometric Chaos Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-2/)
+[Geometric Chaos Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-2/)
 
 ### Mood Bot
 
@@ -44,4 +44,4 @@
 
 [Mood Bot](topics/prototypes/instructions/instructions-prototype-3/)
 
-[Mood Bot Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-3/)
+[Mood Bot Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-3/)
