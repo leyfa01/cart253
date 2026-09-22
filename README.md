@@ -26,21 +26,21 @@
 
 [The Solar System Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-1/)
 
+### Geometric Chaos
+
 <div>
 <img src="images/instruction-prototype-2.png" alt="screenshot" width="200">
 </div>
-
-### Geometric Chaos
 
 [Geometric Chaos](topics/prototypes/instructions/instructions-prototype-2/)
 
 [Geometric Chaos Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-2/)
 
+### Mood Bot
+
 <div>
 <img src="images/instruction-prototype-3.png" alt="screenshot" width="200">
 </div>
-
-### Mood Bot
 
 [Mood Bot](topics/prototypes/instructions/instructions-prototype-3/)
 
