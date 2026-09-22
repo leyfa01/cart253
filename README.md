@@ -19,20 +19,20 @@
 <div align="center">
 <img src="images/instruction-prototype-1.png" alt="screenshot" width="400">
 
-[Instructions-prototype 1](topics/prototypes//instructions/instructions-prototype-1/)
+[The Solar System](topics/prototypes//instructions/instructions-prototype-1/)
 
 </div>
 
 <div align="center">
 <img src="images/instruction-prototype-2.png" alt="screenshot" width="400">
 
-[Instructions-prototype 2](topics/prototypes//instructions/instructions-prototype-2/)
+[Geometric Chaos](topics/prototypes//instructions/instructions-prototype-2/)
 
 </div>
 
 <div align="center">
 <img src="images/instruction-prototype-3.png" alt="screenshot" width="400">
 
-[Instructions-prototype 3](topics/prototypes//instructions/instructions-prototype-3/)
+[Mood Bot](topics/prototypes//instructions/instructions-prototype-3/)
 
 </div>
