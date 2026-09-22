@@ -16,12 +16,11 @@
 
 ## Instructions assignement
 
+### The Solar System
+
 <div>
 <img src="images/instruction-prototype-1.png" alt="screenshot" width="200">
 </div>
-
-### The Solar System
-
 [The Solar System](topics/prototypes/instructions/instructions-prototype-1/)
 [The Solar System Repositary](https://github.com/leyfa01/cart253/topics/prototypes/instructions/instructions-prototype-1/)
 
