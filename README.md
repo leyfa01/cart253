@@ -16,24 +16,23 @@
 
 ### Instructions assignement
 
-[The Solar System](topics/prototypes/instructions/instructions-prototype-1/index.html)
+<div align="center">
+<img src="images/instruction-prototype-1.png" alt="screenshot" width="400">
+</div>
 
-[The Solar System repositary](topics/prototypes/instructions/instructions-prototype-1/)
+[The Solar System](topics/prototypes/instructions/instructions-prototype-1/)
 
 <div align="center">
 <img src="images/instruction-prototype-2.png" alt="screenshot" width="400">
-
-[Geometric Chaos](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-2/index.html)
+</div>
+[Geometric Chaos](cart253/topics/prototypes/instructions/instructions-prototype-2/index.html)
 
 [Geometric Chaos repositary](topics/prototypes/instructions/instructions-prototype-2/)
 
-</div>
-
 <div align="center">
 <img src="images/instruction-prototype-3.png" alt="screenshot" width="400">
+</div>
 
-[Mood Bot](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-3/index.html)
+[Mood Bot](topics/prototypes/instructions/instructions-prototype-3/index.html)
 
 [Mood Bot repositary](topics/prototypes/instructions/instructions-prototype-3/)
-
-</div>
