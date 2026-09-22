@@ -182,5 +182,69 @@ function happyRobot(){
 }
 
 function angryRobot(){
+     
+    // left eye
+    push();
+    translate(-150,-50,-60);
+    pointLight(200, 0, 0, -500, 900, -300);
+    sphere(40,40,5);
+    pop();
+    
+    // right eye
+    push();
+    translate(-150,-50,60);
+    pointLight(200, 0, 0, -500, 900, 300);
+    sphere(40,40,5);
+    pop();
 
+    // left eye contour
+    push();
+    fill(0,0,0);
+    translate(-160,-50,-60);
+    rotateY(-1.5);
+    torus(35, 15,)
+    pop();
+
+    // right eye contour
+    push();
+    fill(0,0,0);
+    noStroke();
+    translate(-160,-50,60);
+    rotateY(1.5);
+    torus(35, 15,)
+    pop();
+    
+    // mouth
+    push();
+    translate(-150,70,0);
+    box(50,50);
+    pop();
+
+    // right side of the mouth
+    push();
+    translate(-150,70,50);
+    box(50,50);
+    pop();
+
+    // left side of the mouth
+    push();
+    translate(-150,70,-50);
+    box(50,50);
+    pop();
+
+    // right eyebrow
+    push();
+    translate(-160,-125,70);
+    fill(0,0,0);
+    rotateX(-1.3);
+    box(20,90,20);
+    pop();
+
+    // left eyebrow
+    push();
+    translate(-160,-125,-70);
+    fill(0,0,0);
+    rotateX(1.3);
+    box(20,90,20);
+    pop();  
 }
