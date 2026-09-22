@@ -10,7 +10,7 @@
 
 ## All my prototypes
 
-[Instructions-challenge](topics/instructions-challenge/)
-[Instrcutions-prototype](topics/prototypes/instructions-prototype-1/)
-[Instrcutions-prototype](topics/prototypes/instructions-prototype-2/)
-[Instrcutions-prototype](topics/prototypes/instructions-prototype-3/)
+- [Instructions-challenge](topics/instructions-challenge/)
+- [Instrcutions-prototype](topics/prototypes/instructions-prototype-1/)
+- [Instrcutions-prototype](topics/prototypes/instructions-prototype-2/)
+- [Instrcutions-prototype](topics/prototypes/instructions-prototype-3/)
