@@ -10,10 +10,17 @@
 
 ## All my challenges
 
-- [Instructions-challenge](topics/instructions-challenge/)
+- [Instructions-challenge](topics/challenges/instructions-challenge/)
 
 ## All my prototypes
 
-- [Instructions-prototype](topics/prototypes/instructions-prototype-1/)
-- [Instructions-prototype](topics/prototypes/instructions-prototype-2/)
-- [Instructions-prototype](topics/prototypes/instructions-prototype-3/)
+### Instructions assignement
+
+- [Instructions-prototype 1](topics/prototypes//instructions/instructions-prototype-1/)
+  <img src="images/instruction-prototype-1.png" alt="screenshot" width="400">
+
+- [Instructions-prototype 2](topics/prototypes//instructions/instructions-prototype-2/)
+  <img src="images/instruction-prototype-2.png" alt="screenshot" width="400">
+
+- [Instructions-prototype 3](topics/prototypes//instructions/instructions-prototype-3/)
+  <img src="images/instruction-prototype-3.png" alt="screenshot" width="400">

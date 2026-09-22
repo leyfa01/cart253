@@ -1,4 +1,4 @@
-# Geometric Chaos - abstract protoype
+# Geometric Chaos - abstract prototype
 
 Leyna Feknous
 
