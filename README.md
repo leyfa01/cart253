@@ -22,7 +22,7 @@
 <img src="images/instruction-prototype-1.png" alt="screenshot" width="200">
 </div>
 
-[The Solar System](topics/prototypes/instructions/instructions-prototype-1/)
+[The Solar System](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-1/)
 
 [The Solar System Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-1/)
 
@@ -32,7 +32,7 @@
 <img src="images/instruction-prototype-2.png" alt="screenshot" width="200">
 </div>
 
-[Geometric Chaos](topics/prototypes/instructions/instructions-prototype-2/)
+[Geometric Chaos](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-2/)
 
 [Geometric Chaos Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-2/)
 
@@ -42,6 +42,6 @@
 <img src="images/instruction-prototype-3.png" alt="screenshot" width="200">
 </div>
 
-[Mood Bot](topics/prototypes/instructions/instructions-prototype-3/)
+[Mood Bot](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-3/)
 
 [Mood Bot Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-3/)
