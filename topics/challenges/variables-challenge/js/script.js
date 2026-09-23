@@ -20,14 +20,28 @@ let mrFurious = {
     b: 255,
   },
 };
-
+// Variable of the sky
 let sky = {
+  // Color of the sky
   fill: {
     r: 160,
     g: 180,
     b: 200,
   },
 };
+// Variable of the annoying bird
+let bird = {
+    x:0,
+    y:60,
+    size:50,
+
+    fill: {
+    r: 0,
+    g: 255,
+    b: 255,
+  },
+
+  };
 
 /**
  * Create the canvas
@@ -64,4 +78,12 @@ function draw() {
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
+
+  // Draw the bird
+  push();
+  noStroke();
+  fill(bird.fill.r,bird.fill.g,bird.fill.b, );
+  ellipse(bird.x,bird.y,bird.size);
+  pop();
+
 }
