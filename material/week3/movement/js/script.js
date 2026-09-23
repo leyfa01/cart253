@@ -49,8 +49,8 @@ function draw() {
 background(0);
 
 // Move the bird
-bird.velocity.x = bird.velocity.x + bird.acceleration.x;
-bird.velocity.y = bird.velocity.y + bird.acceleration.y;
+bird.velocity.x += bird.acceleration.x;
+bird.velocity.y += bird.acceleration.y;
 
 // we constrain the minimum velocity and the  max velocity between them on the x axes
 bird.velocity.x = constrain(bird.velocity.x, bird.minVelocity.x , bird.maxVelocity.x);
@@ -58,10 +58,10 @@ bird.velocity.x = constrain(bird.velocity.x, bird.minVelocity.x , bird.maxVeloci
 bird.velocity.y = constrain(bird.velocity.y, bird.minVelocity.y , bird.maxVelocity.y);
 
 
-bird.x = bird.x + bird.velocity.x;
+bird.x += bird.velocity.x;
 // here we add the velocity instead of subtracting 
 // cuz we alway want to add the current value of the velocity
-bird.y = bird.y + bird.velocity.y;
+bird.y += bird.velocity.y;
 
 
 // Draw the bird
