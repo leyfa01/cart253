@@ -31,17 +31,28 @@ let sky = {
 };
 // Variable of the annoying bird
 let bird = {
-    x:0,
-    y:60,
-    size:50,
+    x: 0,
+    y: 100,
+    size: 50,
 
-    fill: {
+  fill: {
     r: 0,
     g: 255,
     b: 255,
   },
 
-  };
+  // Direction of the bird and his current speed
+  velocity: {
+     x: 0 ,
+     y: -1
+  },
+
+  // How the velocity is gonna change overtime
+  acceleration: {
+  x: 0.05,
+  y: 0.01 
+  }
+};
 
 /**
  * Create the canvas
@@ -70,7 +81,7 @@ function draw() {
   // Keep the value of the green and blue between 0 and 200
   mrFurious.fill.g = constrain(mrFurious.fill.g, 0, 200);
   mrFurious.fill.b = constrain(mrFurious.fill.b, 0, 200);
-  console.log(mrFurious.fill.g, mrFurious.fill.b);
+  
 
   // Draw Mr. Furious as a coloured circle
   push();
@@ -82,8 +93,17 @@ function draw() {
   // Draw the bird
   push();
   noStroke();
-  fill(bird.fill.r,bird.fill.g,bird.fill.b, );
-  ellipse(bird.x,bird.y,bird.size);
+  fill(bird.fill.r, bird.fill.g, bird.fill.b);
+  ellipse(bird.x, bird.y, bird.size);
   pop();
 
+  // Making the bird move with his current speed
+  bird.x += bird.velocity.x;
+  bird.y += bird.velocity.y;
+  
+  // acceleration over time
+  bird.velocity.x += bird.acceleration.x;
+  bird.velocity.y += bird.acceleration.y;
+  console.log(bird.acceleration.x, bird.acceleration.y);
+  
 }
