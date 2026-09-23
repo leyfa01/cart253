@@ -6,7 +6,8 @@ Leyna Feknous
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This is my instruction challenge and there's a cat that is unfortunatly lost in the desert
+and having just a tent to survive
 
 ## Attribution
 

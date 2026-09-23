@@ -223,7 +223,7 @@ function catRightEars() {
   push();
   fill("orange");
   noStroke();
-  triangle(135, 207, 120, 195, 130, 180);
+  triangle(135, 207, 120, 195, 128, 180);
   pop();
 }
 // Body of the cat
