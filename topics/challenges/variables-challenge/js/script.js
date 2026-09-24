@@ -19,6 +19,24 @@ let mrFurious = {
     g: 255,
     b: 255,
   },
+  velocity: {
+    x: 0,
+    y: 0
+  },
+  minVel: {
+    x:-2,
+    y:-2
+  },
+  maxVel: {
+    x: 3,
+    y: 0
+  },
+
+   acceleration: {
+    x: 0.02,
+    y: 0.02
+  },
+
 };
 // Variable of the sky
 let sky = {
@@ -26,32 +44,33 @@ let sky = {
   fill: {
     r: 160,
     g: 180,
-    b: 200,
+    b: 200
   },
 };
 // Variable of the annoying bird
 let bird = {
-    x: 0,
-    y: 100,
-    size: 50,
+  x: 0,
+  y: 100,
+  size: 50,
 
   fill: {
     r: 0,
     g: 255,
-    b: 255,
+    b: 255
   },
 
   // Direction of the bird and his current speed
   velocity: {
-     x: 0 ,
-     y: -1
+    x: 0,
+    y: -1
   },
-
   // How the velocity is gonna change overtime
   acceleration: {
-  x: 0.05,
-  y: 0.01 
-  }
+    x: 0.03,
+    y: 0.01
+  },
+
+
 };
 
 /**
@@ -73,15 +92,27 @@ function draw() {
   sky.fill.g -= 1;
   sky.fill.b -= 1;
 
-
-  // Changing the color of mrFurious overtime 
+  // Changing the color of mrFurious overtime
   mrFurious.fill.g -= 1;
   mrFurious.fill.b -= 1;
 
   // Keep the value of the green and blue between 0 and 200
   mrFurious.fill.g = constrain(mrFurious.fill.g, 0, 200);
   mrFurious.fill.b = constrain(mrFurious.fill.b, 0, 200);
+
+  // Making mrFurious shake faster over time
+  mrFurious.velocity.x += mrFurious.acceleration.x;
+  mrFurious.velocity.y += mrFurious.acceleration.y;
+
   
+
+  // Defining a limite to make it 'shake'
+  mrFurious.velocity.x = constrain(mrFurious.velocity.x, mrFurious.minVel.x, mrFurious.maxVel.x);
+  mrFurious.velocity.y = constrain(mrFurious.velocity.y, mrFurious.minVel.y, mrFurious.maxVel.y);
+
+  // Making mrFurious moving
+  mrFurious.x += mrFurious.velocity.x;
+  mrFurious.y += mrFurious.velocity.y;
 
   // Draw Mr. Furious as a coloured circle
   push();
@@ -89,6 +120,8 @@ function draw() {
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
+
+
 
   // Draw the bird
   push();
@@ -100,10 +133,10 @@ function draw() {
   // Making the bird move with his current speed
   bird.x += bird.velocity.x;
   bird.y += bird.velocity.y;
-  
+
   // acceleration over time
   bird.velocity.x += bird.acceleration.x;
   bird.velocity.y += bird.acceleration.y;
-  console.log(bird.acceleration.x, bird.acceleration.y);
-  
+
+  console.log(mrFurious.x, mrFurious.y);
 }
