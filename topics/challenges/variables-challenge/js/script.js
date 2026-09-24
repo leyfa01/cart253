@@ -23,19 +23,20 @@ let mrFurious = {
     x: 0,
     y: 0
   },
-  minVel: {
-    x:-2,
-    y:-2
-  },
-  maxVel: {
-    x: 3,
-    y: 0
-  },
 
    acceleration: {
     x: 0.02,
     y: 0.02
   },
+
+  maxVel:{
+    x:3
+  },
+
+  minVel:{
+    x:-3
+  
+  }
 
 };
 // Variable of the sky
@@ -100,19 +101,14 @@ function draw() {
   mrFurious.fill.g = constrain(mrFurious.fill.g, 0, 200);
   mrFurious.fill.b = constrain(mrFurious.fill.b, 0, 200);
 
-  // Making mrFurious shake faster over time
+  // Changing the velocity randomly
+  mrFurious.x += random(-mrFurious.velocity.x, mrFurious.velocity.x);
+
+  // Accelerate the speed of the shake over time
   mrFurious.velocity.x += mrFurious.acceleration.x;
-  mrFurious.velocity.y += mrFurious.acceleration.y;
-
   
-
-  // Defining a limite to make it 'shake'
+  // Limitate the range of the shake
   mrFurious.velocity.x = constrain(mrFurious.velocity.x, mrFurious.minVel.x, mrFurious.maxVel.x);
-  mrFurious.velocity.y = constrain(mrFurious.velocity.y, mrFurious.minVel.y, mrFurious.maxVel.y);
-
-  // Making mrFurious moving
-  mrFurious.x += mrFurious.velocity.x;
-  mrFurious.y += mrFurious.velocity.y;
 
   // Draw Mr. Furious as a coloured circle
   push();
