@@ -7,6 +7,7 @@
 
 "use strict";
 
+// Variable of the ball
 let ball = {
   x: 250,
   y: 250,
@@ -27,6 +28,9 @@ let ball = {
   },
 };
 
+/**
+ * Added a canvas
+*/
 function setup() {
   createCanvas(500, 500);
 }

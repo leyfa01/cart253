@@ -9,10 +9,10 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Added a canvas
 */
 function setup() {
-
+createCanvas(500, 500);
 }
 
 
