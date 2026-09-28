@@ -26,14 +26,12 @@ let ball = {
     y: 0.01,
   },
 };
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
- */
+
 function setup() {
   createCanvas(500, 500);
 }
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Updates the ball's movement and draws it on the canvas
  */
 function draw() {
   background(50, 150, 150);
@@ -56,8 +54,6 @@ function draw() {
   else if (ball.y <= 350) {
     ball.acceleration.y = 0.05;
   }
-  console.log(ball.acceleration.y);
-
   // Draw the ball
   push();
   noStroke();
