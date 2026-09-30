@@ -6,8 +6,7 @@ Leyna Feknous
 
 ## Description
 
-This is my instruction challenge and there's a cat that is unfortunatly lost in the desert
-and having just a tent to survive
+This is my instruction challenge and there's a cat that is unfortunatly lost in the desert and having just a tent to survive
 
 ## Attribution
 
