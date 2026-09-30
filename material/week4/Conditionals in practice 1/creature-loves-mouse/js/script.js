@@ -48,7 +48,21 @@ function draw() {
  * Responds to user input
  */
 function checkInput() {
-    // We'll need to figure this out
+    // Check if the mouse button is pressed
+    if(mouseIsPressed){
+        // If it is, the creature becomes happy
+        creature.fill = creature.fills.happy;
+    }
+    // Check if a key is pressed
+    else if(keyIsPressed){
+        // If se, the creature becomes angry
+        creature.fill = creature.fills.angry;
+    }
+    else{
+        // if the mouse is not presed, the creature becomes bored
+        creature.fill = creature.fills.bored
+    }
+    
 }
 
 /**
