@@ -24,7 +24,7 @@ What surprised me the most was that there is not always one direct way to create
 <img src="images/instruction-prototype-2.png" alt="screenshot" width="200">
 <img src="images/instruction-prototype-3.png" alt="screenshot" width="200">
 
-### Variables prototype - 22/09/2026
+### Variables prototype - 30/09/2026
 
 While making these three prototypes, I learned more about movement, interaction, and how variables can change what happens on the screen in p5.js.
 
