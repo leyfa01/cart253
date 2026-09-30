@@ -19,7 +19,11 @@ let growingCircle = {
 }
 let wGrow = 100;
 let hGrow = 100;
-
+let bgColor = {
+    r:0,
+    g:50,
+    b:250
+}
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -33,7 +37,7 @@ createCanvas(500,500);
 */
 function draw() {
     
-    background(0, 50, 250);
+    background(bgColor.r, bgColor.g, bgColor.b);
 
     push();
     noStroke();
@@ -50,6 +54,9 @@ function mouseClicked(){
     }
     else{
         if( wGrow >= 250 || hGrow >= 250)
+        bgColor.r = 100;
+        bgColor.g = 150
+        bgColor.b = 250;
         growingCircle.fill.r = 200;
         growingCircle.fill.g = 200;
         growingCircle.fill.b = 20;
