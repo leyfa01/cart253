@@ -97,7 +97,7 @@ function drawTarget(){
   push();
   stroke(250);
   strokeWeight(3);
-  // Dashed ouline
+  // Dashed outline
 	drawingContext.setLineDash([10, 15]);
   fill(target.fill);
   ellipse(target.x, target.y, target.size);
