@@ -10,7 +10,7 @@ const puck = {
   x: 200,
   y: 200,
   size: 100,
-  fill: "#ff0000", 
+  fill: "#fee50b", 
 };
 
 const user = {
@@ -26,8 +26,8 @@ const target = {
   fill: "#fee50b",
 
   fills : {
-    happy: "#14e970",
-    sad: "#2f39ff"
+    happy: "#fee50b",
+    angry: "#ff2f2f"
   }
   
 }
@@ -37,6 +37,7 @@ const target = {
  */
 function setup() {
   createCanvas(400, 400);
+  
 }
 
 /**
@@ -94,17 +95,22 @@ function drawPuck() {
 // Display the target
 function drawTarget(){
   push();
-  stroke(255);
+  stroke(250);
+  strokeWeight(3);
+	drawingContext.setLineDash([10, 15]);
   fill(target.fill);
   ellipse(target.x, target.y, target.size);
   pop();
 }
 
-
+// Move the puck away from the user
 function movePuck(){
+  // Give the distance between the user and puck
   const distance = dist(user.x, user.y, puck.x, puck.y);
+  // Set a variable to check if the user and puck overlap
   const mouseIsOverlapping = distance < user.size /2 + puck.size/2;
-
+   
+  // If the var mouseIsOverlapping is true then change the position of puck
    if(mouseIsOverlapping){
     if(user.x > puck.x){
       puck.x -=1;
@@ -121,14 +127,19 @@ function movePuck(){
    }
     
 }
+// Change the target color when the puck touches it
 function checkTarget(){
+  // Give the distance between puck and the target
   const distanceTarget = dist(puck.x, puck.y, target.x, target.y);
+  // Set a variable to check if puck and the target ovelap
   const puckIsOverlapping = distanceTarget < puck.size/2 + target.size /2;
 
+  // if it overlap then change to fill color to happy 
+  // Otherwise keep the fill color to angry
   if(puckIsOverlapping){
     target.fill = target.fills.happy;
   }
   else{
-    target.fill = target.fills.sad;
+    target.fill = target.fills.angry;
   }
 }
