@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Hidden in the Dark
 
-AUTHOR NAME
+Leyna Feknous
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+A flashlight follows the mouse and reveals the hidden red circle when it gets close.
 
 ## Attribution
 
