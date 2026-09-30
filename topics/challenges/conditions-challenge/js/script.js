@@ -19,6 +19,18 @@ const user = {
   size: 75,
   fill: "#000000"
 };
+const target = {
+  x: 100,
+  y: 60,
+  size: 100,
+  fill: "#fee50b",
+
+  fills : {
+    happy: "#14e970",
+    sad: "#2f39ff"
+  }
+  
+}
 
 /**
  * Create the canvas
@@ -40,8 +52,13 @@ function draw() {
   drawUser();
   drawPuck();
 
-  // Mover puck circle
+  // Draw the target
+  drawTarget();
+  // Move puck circle
   movePuck();
+
+  // Change the color of the target
+  checkTarget();
 }
 
 /**
@@ -73,6 +90,17 @@ function drawPuck() {
   ellipse(puck.x, puck.y, puck.size);
   pop();
 }
+
+// Display the target
+function drawTarget(){
+  push();
+  stroke(255);
+  fill(target.fill);
+  ellipse(target.x, target.y, target.size);
+  pop();
+}
+
+
 function movePuck(){
   const distance = dist(user.x, user.y, puck.x, puck.y);
   const mouseIsOverlapping = distance < user.size /2 + puck.size/2;
@@ -91,8 +119,16 @@ function movePuck(){
       puck.y +=1;
     }
    }
-  
+    
+}
+function checkTarget(){
+  const distanceTarget = dist(puck.x, puck.y, target.x, target.y);
+  const puckIsOverlapping = distanceTarget < puck.size/2 + target.size /2;
 
-
-    console.log(user.x, user.y, puck.x, puck.y);
+  if(puckIsOverlapping){
+    target.fill = target.fills.happy;
+  }
+  else{
+    target.fill = target.fills.sad;
+  }
 }
