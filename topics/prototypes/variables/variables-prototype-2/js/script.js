@@ -21,15 +21,16 @@ let flashlight = {
 
 // Variable for the red circle
 let redCircle = {
-  x: 250,
-  y: 250,
+  x: 400,
+  y: 400,
   w: 100,
   h: 100,
 };
 
 // Set the amount of the color red 
 let value = 0;
-
+// Set the amount of the offset from the red circle
+let offset = 10;
 /**
  * Added a canvas
  */
@@ -65,10 +66,10 @@ function mouseMoved() {
     
     // Check if the mouse is near the red Circle
   if (
-    mouseX >= redCircle.x - redCircle.w / 2 - 10 &&
-    mouseX <= redCircle.x + redCircle.w / 2 + 10 &&
-    mouseY >= redCircle.y - redCircle.h / 2 - 10 &&
-    mouseY <= redCircle.y + redCircle.h / 2 + 10
+    mouseX >= redCircle.x - redCircle.w / 2 - offset &&
+    mouseX <= redCircle.x + redCircle.w / 2 + offset &&
+    mouseY >= redCircle.y - redCircle.h / 2 - offset &&
+    mouseY <= redCircle.y + redCircle.h / 2 + offset
   ) {
     // Increase the red color overtime
     value += 0.6;
