@@ -1,7 +1,7 @@
 /**
  * Title of Project
  * Author Name
- * 
+ *
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
@@ -40,34 +40,47 @@ let redCircle ={
 
 /**
  * Added a canvas
-*/
+ */
 function setup() {
-createCanvas(500, 500);
+  createCanvas(500, 500);
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ */
 function draw() {
-background(0,0,0);
+  background(0, 0, 0);
 
-let distance = dist(mouseX,mouseY, redCircle.x, redCircle.y);
+  // Draw the flashlight
+  push();
+  fill(flashlight.fill.r, flashlight.fill.g, flashlight.fill.b, 50);
+  ellipse(mouseX, mouseY, flashlight.w, flashlight.h);
+  pop();
 
-if(distance <= flashlight.w/ 2){
-    fill(redCircle.fill.r, redCircle.fill.g, redCircle.fill.b);
+  push();
+  noStroke();
+  fill(value,0,0);
+  ellipse(redCircle.x, redCircle.y, redCircle.w, redCircle.h);
+  pop();
+
+  mouseMoved();
 }
 
-console.log(redCircle.fill);
-
-// Draw the flashlight
-push();
-fill(flashlight.fill.r, flashlight.fill.g, flashlight.fill.b, 50);
-ellipse(mouseX, mouseY, flashlight.w, flashlight.h);
-pop();
-
-push();
-fill(0);
-ellipse(redCircle.x, redCircle.y, redCircle.w, redCircle.h);
-pop();
+function mouseMoved() {
+  if (
+    mouseX >= redCircle.x - redCircle.w / 2 - 10 &&
+    mouseX <= redCircle.x + redCircle.w / 2 + 10 &&
+    mouseY >= redCircle.y - redCircle.h / 2 - 10 &&
+    mouseY <= redCircle.y + redCircle.h / 2 + 10
+  ) {
+    value += 0.6;
+  }
+  else{
+    if( value <= 0 ){
+    value = 0;
+    }
+    else{
+    value -=0.6;
+    }
+  }
 }
