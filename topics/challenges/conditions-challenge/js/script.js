@@ -1,6 +1,6 @@
 /**
  * Circle Master
- * Pippin Barr
+ * Leyna Feknous
  *
  * This will be a program in which the user can push a circle
  * on the canvas using their own circle.
@@ -10,7 +10,7 @@ const puck = {
   x: 200,
   y: 200,
   size: 100,
-  fill: "#ff0000"
+  fill: "#ff0000", 
 };
 
 const user = {
@@ -39,6 +39,9 @@ function draw() {
   // Draw the user and puck
   drawUser();
   drawPuck();
+
+  // Mover puck circle
+  movePuck();
 }
 
 /**
@@ -69,4 +72,27 @@ function drawPuck() {
   fill(puck.fill);
   ellipse(puck.x, puck.y, puck.size);
   pop();
+}
+function movePuck(){
+  const distance = dist(user.x, user.y, puck.x, puck.y);
+  const mouseIsOverlapping = distance < user.size /2 + puck.size/2;
+
+   if(mouseIsOverlapping){
+    if(user.x > puck.x){
+      puck.x -=1;
+    }
+    if(user.y > puck.y){
+      puck.y -=1;
+    }
+    if(user.x < puck.x){
+      puck.x +=1;
+    }
+    if(user.y < puck.y){
+      puck.y +=1;
+    }
+   }
+  
+
+
+    console.log(user.x, user.y, puck.x, puck.y);
 }
