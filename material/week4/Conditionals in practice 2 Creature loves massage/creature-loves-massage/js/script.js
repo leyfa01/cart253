@@ -48,10 +48,19 @@ function draw() {
  * Responds to user input
  */
 function checkInput() {
-    const mouseOverlapsCreature = undefined;
-    const mouseIsMoving = undefined;
+
+    // Give the distance between the mouse and the creature
+    const distance = dist(mouseX, mouseY, creature.x, creature.y);
+    // Set a variable if the mouse is in the radius(inside the circle)
+    const mouseOverlapsCreature = (distance < creature.size/2);
+    // Set a variable if the mouse is moving
+    const mouseIsMoving = (movedX !== 0 || movedY !== 0);
   if(mouseOverlapsCreature && mouseIsMoving){
-    creature.fill =  creature.fills.happy
+
+    creature.fill =  creature.fills.happy;
+  }
+  else{
+    creature.fill = creature.fills.bored;
   }
 }
 
