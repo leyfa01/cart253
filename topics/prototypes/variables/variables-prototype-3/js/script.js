@@ -32,8 +32,8 @@ createCanvas(500,500);
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(100, 150, 250);
-
+    
+    background(0, 50, 250);
 
     push();
     noStroke();
@@ -44,14 +44,15 @@ function draw() {
 }
 
 function mouseClicked(){
-    if(wGrow <= 250 || hGrow <= 250){
+    if(wGrow != 250 || hGrow != 250){
         wGrow+=10;
         hGrow+=10;
     }
     else{
-        wGrow -= 10;
-        hGrow -= 10;
-       
+        if( wGrow >= 250 || hGrow >= 250)
+        growingCircle.fill.r = 200;
+        growingCircle.fill.g = 200;
+        growingCircle.fill.b = 20;
     }
- console.log(hGrow,wGrow);
+ 
 }
