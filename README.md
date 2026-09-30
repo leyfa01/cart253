@@ -12,6 +12,7 @@
 
 - [Instructions-challenge](topics/challenges/instructions-challenge/)
 - [Variables-challenge](topics/challenges/variables-challenge/)
+- [Conditions-challenge](topics/challenges/conditions-challenge/)
 
 ## All my prototypes
 
