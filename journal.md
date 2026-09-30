@@ -10,7 +10,7 @@ I hope that people who visit my website in the future will understand my skills 
 
 ![screenshot](images/Screenshot.png)
 
-### 22/09/2026
+### Instructions prototype - 22/09/2026
 
 While making my three prototypes, I learned a lot about how p5.js works and how much you can create with simple shapes. For my first prototype, I made a solar system using circles, colors, and simple details to represent the Sun and the eight planets. It helped me understand basic functions like ellipse(), fill(), stroke().
 
@@ -20,6 +20,22 @@ For my third prototype, I created a robot with different emotions. This was also
 
 What surprised me the most was that there is not always one direct way to create something. Sometimes I had to experiment and find another solution. I would like to develop the robot further by adding movement and more interactive emotions.
 
-![screenshot](images/instruction-prototype-1.png)
-![screenshot](images/instruction-prototype-2.png)
-![screenshot](images/instruction-prototype-3.png)
+<img src="images/instruction-prototype-1.png" alt="screenshot" width="200">
+<img src="images/instruction-prototype-2.png" alt="screenshot" width="200">
+<img src="images/instruction-prototype-3.png" alt="screenshot" width="200">
+
+### Variables prototype - 22/09/2026
+
+While making these three prototypes, I learned more about movement, interaction, and how variables can change what happens on the screen in p5.js.
+
+For my first prototype, Up and Down, I created a ball that moves vertically using velocity and acceleration. I learned how changing the acceleration can make the ball move in different directions and create a bouncing movement.
+
+For my second prototype, I made a flashlight that follows the mouse and reveals a hidden red circle when the mouse gets close to it. I learned how to use mouseX and mouseY and how to check if the mouse is inside a certain area. The hardest part was figuring out when the mouse was close enough to the hidden circle and how to change its color at the right moment. What surprised me was that such simple shapes could create the feeling of a flashlight and make the prototype feel interactive.
+
+For my third prototype, Grow and Shine, I used mouseClicked() to make the moon grow after each click. Once it reaches its maximum size, the colors change and the moon becomes the sun. This helped me understand if and else statements better.
+
+What I found cool was seeing how small changes in variables could create movement, interaction, and transformation. I hope someone using my prototypes will see how simple code can create playful interactions. I would like to develop the flashlight prototype further by hiding several shapes around the canvas and turning it into a small searching game with a score or timer.
+
+<img src="images/variable-prototype-1.png" alt="screenshot" width="200">
+<img src="images/variable-prototype-2.png" alt="screenshot" width="200">
+<img src="images/variable-prototype-3.png" alt="screenshot" width="200">
