@@ -11,8 +11,6 @@
 let growingCircle = {
     x:250,
     y:250,
-    
-
     fill : {
         r:200,
         g:220,
@@ -21,6 +19,7 @@ let growingCircle = {
 }
 let wGrow = 100;
 let hGrow = 100;
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -42,4 +41,17 @@ function draw() {
     ellipse(growingCircle.x, growingCircle.y, wGrow, hGrow)
     pop();
 
+}
+
+function mouseClicked(){
+    if(wGrow <= 250 || hGrow <= 250){
+        wGrow+=10;
+        hGrow+=10;
+    }
+    else{
+        wGrow -= 10;
+        hGrow -= 10;
+       
+    }
+ console.log(hGrow,wGrow);
 }
