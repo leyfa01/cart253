@@ -46,3 +46,35 @@
 [Mood Bot](https://leyfa01.github.io/cart253/topics/prototypes/instructions/instructions-prototype-3/)
 
 [Mood Bot Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/instructions/instructions-prototype-3/)
+
+## Variables assignement
+
+### Up and Down
+
+<div>
+<img src="images/variable-prototype-1.png" alt="screenshot" width="200">
+</div>
+
+[Up and Down](https://leyfa01.github.io/cart253/topics/prototypes/variables/variables-prototype-1/)
+
+[Up and Down Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/variables/variables-prototype-1/)
+
+### Hidden in the Dark
+
+<div>
+<img src="images/variable-prototype-2.png" alt="screenshot" width="200">
+</div>
+
+[Hidden in the Dark](https://leyfa01.github.io/cart253/topics/prototypes/variables/variables-prototype-2/)
+
+[Hidden in the Dark Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/variables/variables-prototype-2/)
+
+### Grow and Shine
+
+<div>
+<img src="images/variable-prototype-3.png" alt="screenshot" width="200">
+</div>
+
+[Grow and Shine](https://leyfa01.github.io/cart253/topics/prototypes/variables/variables-prototype-3/)
+
+[Grow and Shine Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/variables/variables-prototype-3/)
