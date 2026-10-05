@@ -100,7 +100,7 @@ let pandaLeftIris ={
 
 let pandaNose ={
     x: 400,
-    y: 430,
+    y: 460,
     w: 50,
     h: 40,
 
@@ -110,7 +110,16 @@ let pandaNose ={
         b:0
     }
 }
+let bamboo ={
+    w: 130,
+    h: 20,
 
+    fill: {
+        r:150,
+        g:180,
+        b:100
+    }
+}
 
 function setup() {
 createCanvas(800,800);
@@ -130,7 +139,9 @@ drawPandaRightEye();
 drawPandaRightIris();
 drawPandaLeftIris();
 drawPandaNose();
-
+drawPandaLeftMouth();
+drawPandaRightMouth();
+food();
 
 }
 
@@ -204,5 +215,28 @@ push();
 fill(pandaNose.fill.r,pandaNose.fill.g,pandaNose.fill.b);
 translate(pandaNose.x, pandaNose.y)
 ellipse(0, 0,pandaNose.w,pandaNose.h);
+pop();
+}
+
+//////// Panda Mouth //////////
+function drawPandaLeftMouth(){
+push();
+noFill();
+strokeWeight(8);
+bezier( 400, 480,385, 510,345, 520,325, 480);
+pop();
+}
+function drawPandaRightMouth(){
+push();
+noFill();
+strokeWeight(8);
+bezier(400, 480,415, 510,455, 520,475, 480);
+pop();
+}
+//////// Bamboo //////////
+function food(){
+push();
+fill(bamboo.fill.r,bamboo.fill.g,bamboo.fill.b);
+rect(mouseX, mouseY, bamboo.w, bamboo.h)
 pop();
 }
