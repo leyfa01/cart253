@@ -2,15 +2,12 @@
  * Title of Project
  * Leyna Feknous
  *
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A panda reacts to a bamboo sitck, the panda changes color depending on 
+ * whether the bamboo is close or far
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
- */
 let pandaHead = {
   x: 400,
   y: 400,
@@ -123,15 +120,17 @@ let bamboo = {
   },
 };
 
+// Create the canvas
 function setup() {
   createCanvas(800, 800);
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the panda and bamboo, then checks if the panda is being fed
  */
 function draw() {
   background(200, 200, 200);
+// Draw the panda
   drawPandaRightEar();
   drawPandaLeftEar();
   drawPandaHead();
@@ -142,6 +141,7 @@ function draw() {
   drawPandaNose();
   drawPandaLeftMouth();
   drawPandaRightMouth();
+//   Move and draw the bamboo, and checks if the panda is being fed 
   food();
   feedPanda();
   moveBamboo();
@@ -241,19 +241,23 @@ function food() {
   rect(bamboo.x, bamboo.y, bamboo.w, bamboo.h);
   pop();
 }
-
+//////// The Bamboo follows the mouse //////////
 function moveBamboo(){
     bamboo.x = mouseX;
     bamboo.y = mouseY;
 }
-function feedPanda() {
-    const distance = dist(bamboo.x, bamboo.y, pandaHead.x, pandaHead.y);
 
+function feedPanda() {
+    // Check the distance between the bamboo and the panda
+    const distance = dist(bamboo.x, bamboo.y, pandaHead.x, pandaHead.y);
+    // Check if the bamboo is close enough to feed the panda
     const feedingPanda = distance < bamboo.w /3 + pandaHead.w/3;
 if(feedingPanda){
+    // Panda is happy because the bamboo is close to him
     pandaHead.fills.normal=pandaHead.fills.happy;
 }
 else{
+    // Panda is angry because the bamboo is not close to him
     pandaHead.fills.normal=pandaHead.fills.angry;
 }
 }
