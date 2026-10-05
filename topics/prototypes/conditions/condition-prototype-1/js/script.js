@@ -1,5 +1,5 @@
 /**
- * Title of Project
+ * Feed the Panda
  * Leyna Feknous
  *
  * A panda reacts to a bamboo sitck, the panda changes color depending on 
