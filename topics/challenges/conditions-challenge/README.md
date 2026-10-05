@@ -1,20 +1,18 @@
-# CAT LOST IN THE DESERT - INSTRUCTIONS CHALLENGE
+# Conditions challenge
 
 Leyna Feknous
 
-[View this project online](https://leyfa01.github.io/cart253/topics/challenges/instructions-challenge/)
+[View this project online](https://leyfa01.github.io/cart253/topics/challenges/conditions-challenge/)
 
 ## Description
 
-This is my instruction challenge and there's a cat that is unfortunatly lost in the desert and having just a tent to survive
+This will be a program in which the user can push a circle on the canvas using their own circle.
 
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
 
