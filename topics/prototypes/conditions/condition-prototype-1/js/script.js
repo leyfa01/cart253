@@ -23,7 +23,7 @@ let pandaHead ={
         b: 250
     }
 }
-let pandaRightEars ={
+let pandaRightEar ={
     x: 190,
     y: 250,
     w: 150,
@@ -34,10 +34,8 @@ let pandaRightEars ={
         g:0,
         b:0
     }
-
-
 }
-let pandaLeftEars ={
+let pandaLeftEar ={
     x: 600,
     y: 250,
     w: 150,
@@ -48,9 +46,71 @@ let pandaLeftEars ={
         g:0,
         b:0
     }
-
-
 }
+
+let pandaLeftEye ={
+    x: 510,
+    y: 380,
+    w: 150,
+    h: 130,
+
+    fill: {
+        r:0,
+        g:0,
+        b:0
+    }
+}
+let pandaRightEye ={
+    x: 300,
+    y: 380,
+    w: 150,
+    h: 130,
+
+    fill: {
+        r:0,
+        g:0,
+        b:0
+    }
+}
+
+let pandaRightIris ={
+    x: 310,
+    y: 380,
+    w: 40,
+    h: 40,
+
+    fill: {
+        r:250,
+        g:250,
+        b:250
+    }
+}
+let pandaLeftIris ={
+    x: 500,
+    y: 380,
+    w: 40,
+    h: 40,
+
+    fill: {
+        r:250,
+        g:250,
+        b:250
+    }
+}
+
+let pandaNose ={
+    x: 400,
+    y: 430,
+    w: 50,
+    h: 40,
+
+    fill: {
+        r:0,
+        g:0,
+        b:0
+    }
+}
+
 
 function setup() {
 createCanvas(800,800);
@@ -62,13 +122,20 @@ createCanvas(800,800);
 */
 function draw() {
 background(200,200,200);
-drawPandaRightEars();
-drawPandaLeftEars()
+drawPandaRightEar();
+drawPandaLeftEar();
 drawPandaHead();
+drawPandaLeftEye();
+drawPandaRightEye();
+drawPandaRightIris();
+drawPandaLeftIris();
+drawPandaNose();
+
+
 }
 
 
-// Panda head
+//////// Panda Head //////////
 function drawPandaHead(){
 push();
 strokeWeight(4);
@@ -77,21 +144,65 @@ ellipse(pandaHead.x, pandaHead.y,pandaHead.w,pandaHead.h);
 pop();
 }
 
-// Panda ears
-function drawPandaRightEars(){
+//////// Panda Ears //////////
+function drawPandaRightEar(){
 push();
-fill(pandaRightEars.fill.r,pandaRightEars.fill.g,pandaRightEars.fill.b);
-translate(pandaRightEars.x, pandaRightEars.y)
+fill(pandaRightEar.fill.r,pandaRightEar.fill.g,pandaRightEar.fill.b);
+translate(pandaRightEar.x, pandaRightEar.y)
 rotate(-19.8);
-ellipse(0, 0,pandaRightEars.w,pandaRightEars.h);
+ellipse(0, 0,pandaRightEar.w,pandaRightEar.h);
 pop();
 }
-function drawPandaLeftEars(){
+function drawPandaLeftEar(){
 push();
-fill(pandaLeftEars.fill.r,pandaLeftEars.fill.g,pandaLeftEars.fill.b);
-translate(pandaLeftEars.x, pandaLeftEars.y)
+fill(pandaLeftEar.fill.r,pandaLeftEar.fill.g,pandaLeftEar.fill.b);
+translate(pandaLeftEar.x, pandaLeftEar.y)
 rotate(35.5);
-ellipse(0, 0,pandaLeftEars.w,pandaLeftEars.h);
+ellipse(0, 0,pandaLeftEar.w,pandaLeftEar.h);
 pop();
+}
+//////// Panda Eyes //////////
+function drawPandaLeftEye(){
+push();
+fill(pandaLeftEye.fill.r,pandaLeftEye.fill.g,pandaLeftEye.fill.b);
+translate(pandaLeftEye.x, pandaLeftEye.y)
+rotate(35.5);
+ellipse(0, 0,pandaLeftEye.w,pandaLeftEye.h);
+pop();
+}
 
+function drawPandaRightEye(){
+push();
+fill(pandaRightEye.fill.r,pandaRightEye.fill.g,pandaRightEye.fill.b);
+translate(pandaRightEye.x, pandaRightEye.y)
+rotate(-19.9);
+ellipse(0, 0,pandaRightEye.w,pandaRightEye.h);
+pop();
+}
+//////// Panda Iris //////////
+function drawPandaLeftIris(){
+push();
+fill(pandaLeftIris.fill.r,pandaLeftIris.fill.g,pandaLeftIris.fill.b);
+translate(pandaLeftIris.x, pandaLeftIris.y)
+rotate(35.5);
+ellipse(0, 0,pandaLeftIris.w,pandaLeftIris.h);
+pop();
+}
+
+function drawPandaRightIris(){
+push();
+fill(pandaRightIris.fill.r,pandaRightIris.fill.g,pandaRightIris.fill.b);
+translate(pandaRightIris.x, pandaRightIris.y)
+rotate(-19.9);
+ellipse(0, 0,pandaRightIris.w,pandaRightIris.h);
+pop();
+}
+
+//////// Panda Nose //////////
+function drawPandaNose(){
+push();
+fill(pandaNose.fill.r,pandaNose.fill.g,pandaNose.fill.b);
+translate(pandaNose.x, pandaNose.y)
+ellipse(0, 0,pandaNose.w,pandaNose.h);
+pop();
 }
