@@ -1,6 +1,6 @@
 /**
  * Title of Project
- * Author Name
+ * Leyna Feknous
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -11,8 +11,10 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
 
+
+function setup() {
+createCanvas(1000,700);
 }
 
 
@@ -20,5 +22,5 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-
+background(150,150,150);
 }
