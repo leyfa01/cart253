@@ -1,8 +1,8 @@
-# Don't press the button
+# Don't press the Button
 
 Leyna Feknous
 
-[View this project online](<(https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-3/)>)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-3/)
 
 ## Description
 
