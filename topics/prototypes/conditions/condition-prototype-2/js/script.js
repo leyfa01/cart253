@@ -48,17 +48,17 @@ let thirdDoor = {
   },
 };
 let resultFirstDoor = {
-    x:200,
-    y:250,
-    w:50,
-    h:50,
+  x: 200,
+  y: 250,
+  w: 50,
+  h: 50,
 
-    fill: {
+  fill: {
     r: 100,
     g: 150,
     b: 250,
   },
-}
+};
 let showFirstPrize = false;
 
 function setup() {
@@ -74,7 +74,7 @@ function draw() {
   drawFirstDoor();
   drawSecondDoor();
   drawThirdDoor();
-  if(showFirstPrize){
+  if (showFirstPrize) {
     prizeFirstDoor();
   }
 }
@@ -105,29 +105,97 @@ function drawThirdDoor() {
   rect(thirdDoor.x, thirdDoor.y, firstDoor.w, thirdDoor.h);
   pop();
 }
-function prizeFirstDoor(){
-    push();
-    noStroke();
-    ellipse(resultFirstDoor.x,resultFirstDoor.y + 50 ,resultFirstDoor.w +20 , resultFirstDoor.h+ 20);
-    pop();
+function prizeFirstDoor() {
+  push();
+  noStroke();
+  ellipse(
+    resultFirstDoor.x,
+    resultFirstDoor.y + 50,
+    resultFirstDoor.w + 20,
+    resultFirstDoor.h + 20,
+  );
+  pop();
 
-    push();
-    noStroke();
-    ellipse(resultFirstDoor.x,resultFirstDoor.y,resultFirstDoor.w, resultFirstDoor.h);
-    firstDoor.fill = resultFirstDoor.fill.r,resultFirstDoor.fill.g,resultFirstDoor.fill.b;
-    pop();
+  push();
+  noStroke();
+  ellipse(
+    resultFirstDoor.x,
+    resultFirstDoor.y,
+    resultFirstDoor.w,
+    resultFirstDoor.h,
+  );
+  ((firstDoor.fill = resultFirstDoor.fill.r),
+    resultFirstDoor.fill.g,
+    resultFirstDoor.fill.b);
+  pop();
 
-    push();
-    noStroke();
-    ellipse(resultFirstDoor.x,resultFirstDoor.y + 110 ,resultFirstDoor.w +40 , resultFirstDoor.h+ 40);
-    pop();
+  push();
+  noStroke();
+  ellipse(
+    resultFirstDoor.x,
+    resultFirstDoor.y + 110,
+    resultFirstDoor.w + 40,
+    resultFirstDoor.h + 40,
+  );
+  pop();
 
-    push();
-    noStroke();
-    fill("orange");
-    triangle(195, 245, 195, 255, 235, 250);
-    pop();
-   
+  push();
+  noStroke();
+  fill("orange");
+  triangle(195, 245, 195, 255, 235, 250);
+  pop();
+
+  push();
+  fill(0,0,0);
+  bezier(190, 260, 195, 270, 205, 270, 210, 260);
+  pop();
+
+  push();
+  fill(0, 0, 0);
+  ellipse(
+    resultFirstDoor.x + 10,
+    resultFirstDoor.y - 10,
+    resultFirstDoor.w - 40,
+    resultFirstDoor.h - 40,
+  );
+  pop();
+  push();
+  fill(0, 0, 0);
+  ellipse(
+    resultFirstDoor.x - 10,
+    resultFirstDoor.y - 10,
+    resultFirstDoor.w - 40,
+    resultFirstDoor.h - 40,
+  );
+  pop();
+  push();
+  fill(0, 0, 0);
+  ellipse(
+    resultFirstDoor.x,
+    resultFirstDoor.y + 40,
+    resultFirstDoor.w - 40,
+    resultFirstDoor.h - 40,
+  );
+  pop();
+  push();
+  fill(0, 0, 0);
+  ellipse(
+    resultFirstDoor.x,
+    resultFirstDoor.y + 80,
+    resultFirstDoor.w - 40,
+    resultFirstDoor.h - 40,
+  );
+  pop();
+
+  push();
+  fill(0, 0, 0);
+  ellipse(
+    resultFirstDoor.x,
+    resultFirstDoor.y + 120,
+    resultFirstDoor.w - 40,
+    resultFirstDoor.h - 40,
+  );
+  pop();
 }
 function mouseClicked() {
   if (
@@ -139,13 +207,13 @@ function mouseClicked() {
     showFirstPrize = true;
     console.log("Red door");
   }
-   if (
+  if (
     mouseX >= secondDoor.x &&
     mouseX <= secondDoor.x + secondDoor.w &&
     mouseY >= secondDoor.y &&
     mouseY <= secondDoor.y + secondDoor.h
   ) {
-    secondDoor.fill = 0,0,0;
+    ((secondDoor.fill = 0), 0, 0);
     console.log("Green door");
   }
   if (
@@ -154,7 +222,7 @@ function mouseClicked() {
     mouseY >= thirdDoor.y &&
     mouseY <= thirdDoor.y + thirdDoor.h
   ) {
-    thirdDoor.fill = 0,0,0;
+    ((thirdDoor.fill = 0), 0, 0);
     console.log("Blue door");
   }
 }
