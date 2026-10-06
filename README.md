@@ -96,9 +96,9 @@
 <img src="images/conditional-prototype-2.png" alt="screenshot" width="200">
 </div>
 
-[Feed the Panda](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-2/)
+[Find the Snowman](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-2/)
 
-[Feed the Panda Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-2/)
+[Find the Snowman Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-2/)
 
 ### Don't press the Button
 
@@ -106,6 +106,6 @@
 <img src="images/conditional-prototype-3.png" alt="screenshot" width="200">
 </div>
 
-[Feed the Panda](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-3/)
+[Don't press the Button](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-3/)
 
-[Feed the Panda Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-3/)
+[Don't press the Button Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-3/)
