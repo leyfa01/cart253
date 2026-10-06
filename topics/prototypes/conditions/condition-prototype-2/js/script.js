@@ -47,6 +47,19 @@ let thirdDoor = {
     b: 250,
   },
 };
+let resultFirstDoor = {
+    x:200,
+    y:250,
+    w:50,
+    h:50,
+
+    fill: {
+    r: 100,
+    g: 150,
+    b: 250,
+  },
+}
+let showFirstPrize = false;
 
 function setup() {
   createCanvas(1000, 700);
@@ -61,6 +74,9 @@ function draw() {
   drawFirstDoor();
   drawSecondDoor();
   drawThirdDoor();
+  if(showFirstPrize){
+    prizeFirstDoor();
+  }
 }
 
 function drawFirstDoor() {
@@ -89,7 +105,30 @@ function drawThirdDoor() {
   rect(thirdDoor.x, thirdDoor.y, firstDoor.w, thirdDoor.h);
   pop();
 }
+function prizeFirstDoor(){
+    push();
+    noStroke();
+    ellipse(resultFirstDoor.x,resultFirstDoor.y + 50 ,resultFirstDoor.w +20 , resultFirstDoor.h+ 20);
+    pop();
 
+    push();
+    noStroke();
+    ellipse(resultFirstDoor.x,resultFirstDoor.y,resultFirstDoor.w, resultFirstDoor.h);
+    firstDoor.fill = resultFirstDoor.fill.r,resultFirstDoor.fill.g,resultFirstDoor.fill.b;
+    pop();
+
+    push();
+    noStroke();
+    ellipse(resultFirstDoor.x,resultFirstDoor.y + 110 ,resultFirstDoor.w +40 , resultFirstDoor.h+ 40);
+    pop();
+
+    push();
+    noStroke();
+    fill("orange");
+    triangle(195, 245, 195, 255, 235, 250);
+    pop();
+   
+}
 function mouseClicked() {
   if (
     mouseX >= firstDoor.x &&
@@ -97,6 +136,7 @@ function mouseClicked() {
     mouseY >= firstDoor.y &&
     mouseY <= firstDoor.y + firstDoor.h
   ) {
+    showFirstPrize = true;
     console.log("Red door");
   }
    if (
@@ -105,6 +145,7 @@ function mouseClicked() {
     mouseY >= secondDoor.y &&
     mouseY <= secondDoor.y + secondDoor.h
   ) {
+    secondDoor.fill = 0,0,0;
     console.log("Green door");
   }
   if (
@@ -113,6 +154,7 @@ function mouseClicked() {
     mouseY >= thirdDoor.y &&
     mouseY <= thirdDoor.y + thirdDoor.h
   ) {
+    thirdDoor.fill = 0,0,0;
     console.log("Blue door");
   }
 }
