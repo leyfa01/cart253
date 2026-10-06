@@ -39,3 +39,19 @@ What I found cool was seeing how small changes in variables could create movemen
 <img src="images/variable-prototype-1.png" alt="screenshot" width="200">
 <img src="images/variable-prototype-2.png" alt="screenshot" width="200">
 <img src="images/variable-prototype-3.png" alt="screenshot" width="200">
+
+### Conditional prototype - 10/05/2026
+
+For this assignment, I created three different prototypes using conditionals. My first prototype was a panda that reacts to bamboo. and the panda changes its mood depending on how close the bamboo is. My second prototype was a door game where the player has to find the snowman by choosing one of three doors. My third prototype was a red button that reacts differently every time the player clicks it.
+
+What I learned from this assignment was how conditionals can make a program react to the user. I got better at using if, else if, and else to create different results, such as changing colors, showing objects, changing backgrounds, and displaying different messages.
+
+Something that surprised me was how simple conditionals can make a program feel more interactive. For example, the red button is very simple, but the different messages and background changes make it feel like it is reacting to the player.
+
+One difficult part was keeping an object visible after clicking. At first, the snowman disappeared quickly because the background updates every frame. I learned that I needed to save the click result in a variable and use that variable in draw() so the snowman could stay visible.
+
+I hope someone playing my prototypes can quickly understand how to interact with them and enjoy the different reactions. If I developed one project further, I would improve the door game by adding more surprises and making the doors open with an animation.
+
+<img src="images/conditional-prototype-1.png" alt="screenshot" width="200">
+<img src="images/conditional-prototype-2.png" alt="screenshot" width="200">
+<img src="images/conditional-prototype-3.png" alt="screenshot" width="200">

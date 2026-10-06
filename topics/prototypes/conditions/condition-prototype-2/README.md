@@ -1,7 +1,7 @@
-# Find the snowman
+# Find the Snowman
 
 Leyna Feknous
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](<(https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-2/)>)
 
 ## Description
 

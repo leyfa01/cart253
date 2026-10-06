@@ -79,3 +79,33 @@
 [Grow and Shine](https://leyfa01.github.io/cart253/topics/prototypes/variables/variables-prototype-3/)
 
 [Grow and Shine Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/variables/variables-prototype-3/)
+
+### Feed the Panda
+
+<div>
+<img src="images/conditional-prototype-1.png" alt="screenshot" width="200">
+</div>
+
+[Feed the Panda](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-1/)
+
+[Feed the Panda Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-1/)
+
+### Find the Snowman
+
+<div>
+<img src="images/conditional-prototype-2.png" alt="screenshot" width="200">
+</div>
+
+[Feed the Panda](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-2/)
+
+[Feed the Panda Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-2/)
+
+### Don't press the Button
+
+<div>
+<img src="images/conditional-prototype-3.png" alt="screenshot" width="200">
+</div>
+
+[Feed the Panda](https://leyfa01.github.io/cart253/topics/prototypes/conditions/condition-prototype-3/)
+
+[Feed the Panda Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/conditions/condition-prototype-3/)
