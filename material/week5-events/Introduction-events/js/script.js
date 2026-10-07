@@ -1,24 +1,32 @@
 /**
- * Title of Project
- * Author Name
+ * Introducting events
+ * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * How events work in JS and p5
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates canvas
 */
 function setup() {
-
+    createCanvas(400,400);
+    background(0);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Does nothing
 */
 function draw() {
 
+}
+// Draws a circle at the mouse location
+function mousePressed(){
+    push();
+    noStroke();
+    fill(255,255,0);
+    ellipse(mouseX,mouseYm,50);
+    pop();
 }
