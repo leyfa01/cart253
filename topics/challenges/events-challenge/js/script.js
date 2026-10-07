@@ -25,6 +25,9 @@ function setup() {
   window.addEventListener("mousemove", lose);
   window.addEventListener("wheel", lose);
   window.addEventListener("click", lose);
+  window.addEventListener("offline", lose);
+  window.addEventListener("online", lose);
+   
 
 }
 
