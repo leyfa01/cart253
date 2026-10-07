@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Plain JavaScript Events
+ * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Experimenting with event handling in Plain JavaScript
  */
 
 "use strict";
