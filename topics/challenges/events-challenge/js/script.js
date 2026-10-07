@@ -27,6 +27,7 @@ function setup() {
   window.addEventListener("click", lose);
   window.addEventListener("offline", lose);
   window.addEventListener("online", lose);
+  document.addEventListener("visibilitychange", lose);
    
 
 }
