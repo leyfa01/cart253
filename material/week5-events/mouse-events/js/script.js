@@ -60,6 +60,6 @@ function mouseWheel(event){
         ball.size += 2;
     }
     else{
-        ball.speed -=2
+        ball.size -=2
     }
 }
