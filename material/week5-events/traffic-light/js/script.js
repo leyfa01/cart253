@@ -34,7 +34,7 @@ function setup() {
     // Timout is one inteval(happen one time)
     setInterval(changeLight, trafficLight.delay);
 
-    requestAnimationFrame();
+ 
 }
 
 /**
