@@ -19,6 +19,10 @@ let gameOver = false;
  */
 function setup() {
   createCanvas(400, 400);
+
+  window.addEventListener("keydown", lose);
+  window.addEventListener("keyup", lose);
+
 }
 
 /**
