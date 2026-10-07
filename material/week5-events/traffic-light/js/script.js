@@ -27,6 +27,14 @@ const trafficLight = {
  */
 function setup() {
     createCanvas(400, 400);
+
+    // Start a timer for 1000 milliseconds(delay) 
+    // and when it's done call the function changeLight()
+    // Set interval will repeat the delay every 1000 milliseconds
+    // Timout is one inteval(happen one time)
+    setInterval(changeLight, trafficLight.delay);
+
+    requestAnimationFrame();
 }
 
 /**
@@ -41,4 +49,16 @@ function draw() {
     fill(trafficLight.fill);
     ellipse(trafficLight.x, trafficLight.y, trafficLight.size);
     pop();
+}
+// Called when the timer finishes
+function changeLight(){
+    if(trafficLight.fill=== trafficLight.fills.go){
+        trafficLight.fill= trafficLight.fills.slow
+    }
+    else if(trafficLight.fill=== trafficLight.fills.slow){
+        trafficLight.fill= trafficLight.fills.stop
+    }
+    else if(trafficLight.fill=== trafficLight.fills.stop){
+        trafficLight.fill= trafficLight.fills.go
+    }
 }
