@@ -22,6 +22,9 @@ function setup() {
 
   window.addEventListener("keydown", lose);
   window.addEventListener("keyup", lose);
+  window.addEventListener("mousemove", lose);
+  window.addEventListener("wheel", lose);
+  window.addEventListener("click", lose);
 
 }
 
