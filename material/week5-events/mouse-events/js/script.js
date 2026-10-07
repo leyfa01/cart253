@@ -45,3 +45,21 @@ function draw() {
     ellipse(ball.x, ball.y, ball.size);
     pop();
 }
+function mousePressed(){
+    // When the user click, the velocity take the value of the speed
+    ball.velocity.x = ball.speed;
+}
+
+function mouseReleased(){
+    // Stop the ball when the user release the mouse button
+    ball.velocity.x = 0;
+}
+function mouseWheel(event){
+    // Resize the ball
+    if(event.delta > 0){
+        ball.size += 2;
+    }
+    else{
+        ball.speed -=2
+    }
+}
