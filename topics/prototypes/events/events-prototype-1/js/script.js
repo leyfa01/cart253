@@ -30,13 +30,16 @@ let monsterEye ={
     h:10,
 
     fill: {
-        r:300,
-        g:300,
-        b:300
+        r:0,
+        g:0,
+        b:0
     }
 }
+
 function setup() {
 createCanvas(500,500);
+
+window.addEventListener("mousemove", wakeUpMonster);
 }
 
 
@@ -44,7 +47,7 @@ createCanvas(500,500);
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(10,100,140);
+    background(10,10,80);
     drawMonster();
     drawMonsterLeftEyes();
     drawMonsterRightEyes();
@@ -70,5 +73,14 @@ function drawMonsterRightEyes(){
     fill(monsterEye.fill.r,monsterEye.fill.g,monsterEye.fill.b)
     ellipse(monsterEye.x+160,monsterEye.y,monsterEye.w,monsterEye.h)
     pop();
+}
+
+function wakeUpMonster(){
+    if(monsterEye.h < 100){
+        monsterEye.h++
+        monster.fill.r++
+        monster.fill.g--
+        monster.fill.b--
+    }
 }
 
