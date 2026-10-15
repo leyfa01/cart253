@@ -22,17 +22,35 @@ let blackHole = {
     g: 40,
     b: 90,
   },
-  keys:{
-        w: 87, 
-        a: 65, 
-        s: 83, 
-        d: 68 
-    }
+  keys: {
+    w: 87,
+    a: 65,
+    s: 83,
+    d: 68,
+  },
+  
+};
+let keyDown ={
+    w: false,
+    a: false,
+    s: false,
+    d: false
+  }
+let planet = {
+  x: 80,
+  y: 90,
+  w: 80,
+  h: 80,
+   fill: {
+    r: 100,
+    g: 200,
+    b: 90,
+  },
 };
 
 function setup() {
   createCanvas(500, 500);
-  window.addEventListener("keydown", moveBlackHole)
+  window.addEventListener("keydown", moveBlackHole);
 }
 
 /**
@@ -41,6 +59,8 @@ function setup() {
 function draw() {
   background(10, 90, 200);
   drawBlackHole();
+  drawPlanet();
+  eatPlanet();
 }
 
 function drawBlackHole() {
@@ -50,17 +70,34 @@ function drawBlackHole() {
   ellipse(blackHole.x, blackHole.y, blackHole.w, blackHole.h);
   pop();
 }
-function moveBlackHole(){
-    if(keyCode===blackHole.keys.w){
-        blackHole.y-=5
-    }
-    if(keyCode===blackHole.keys.a){
-        blackHole.x-=5
-    }
-    if(keyCode===blackHole.keys.s){
-        blackHole.y+=5
-    }
-    if(keyCode===blackHole.keys.d){
-        blackHole.x+=5
-    }
+function drawPlanet() {
+  push();
+  noStroke();
+  fill(planet.fill.r, planet.fill.g, planet.fill.b);
+  ellipse(planet.x, planet.y, planet.w, planet.h);
+  pop();
+}
+function moveBlackHole() {
+  if (keyCode === blackHole.keys.w) {
+    blackHole.y -= 5;
+  }
+  if (keyCode === blackHole.keys.a) {
+    blackHole.x -= 5;
+  }
+  if (keyCode === blackHole.keys.s) {
+    blackHole.y += 5;
+  }
+  if (keyCode === blackHole.keys.d) {
+    blackHole.x += 5;
+  }
+}
+function eatPlanet(){
+const distancePlanet = dist(blackHole.x, blackHole.y, planet.x, planet.y);
+const planetIsOverlapping = distancePlanet < blackHole.w /2 + planet.w/2;
+ if(planetIsOverlapping){
+    planet.w = 0;
+    planet.h = 0;
+    blackHole.w+=5
+    blackHole.h+=5
+  }
 }
