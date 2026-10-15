@@ -25,6 +25,8 @@ let growingCircle ={
     },
     delay: 5
 }
+let offset = 15;
+let message = "";
 let growInterval;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
@@ -43,6 +45,9 @@ function draw() {
     background(200,200,100);
     drawCircle();
     drawGrowingCircle();
+    textSize(30);
+    text(message,190,35);
+    
 
 }
 
@@ -68,5 +73,20 @@ function growCircle(){
 function stopGrowing(event){
     if(event.keyCode ===32){
         clearInterval(growInterval);
+        result();
+    }
+}
+function result(){
+    if(targetCircle.size<=growingCircle.size + offset && targetCircle.size>=growingCircle.size - offset){
+        message = "goodjob"
+        console.log("goodjob");
+    }
+    else if(targetCircle.size>growingCircle.size + offset){
+        message = "too small"
+        console.log("too small");
+    }
+    else if(targetCircle.size<growingCircle.size - offset){
+        message = "too big"
+        console.log("too big");
     }
 }
