@@ -52,7 +52,8 @@ function draw() {
     drawCircle();
     drawGrowingCircle();
     textSize(30);
-    text(message,190,35);
+    textAlign(CENTER, CENTER);
+    text(message,width / 2,35);
 
 }
 // Draws the target circle
@@ -89,15 +90,12 @@ function stopGrowing(event){
  
 function result(){
     if(targetCircle.size<=growingCircle.size + offset && targetCircle.size>=growingCircle.size - offset){
-        message = "goodjob"
-        console.log("goodjob");
+        message = "GOOD JOB !!"
     }
     else if(targetCircle.size>growingCircle.size + offset){
-        message = "too small"
-        console.log("too small");
+        message = "TOO SMALL"
     }
     else if(targetCircle.size<growingCircle.size - offset){
-        message = "too big"
-        console.log("too big");
+        message = "TOO BIG"
     }
 }
