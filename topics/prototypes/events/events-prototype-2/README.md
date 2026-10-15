@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Black hole
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/events/events-prototype-2/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Use the WASD keys to move the black hole and eat the planet. Each time the planet is eaten, it moves to a new random position, changes color, and the black hole grows.
 
 ## Attribution
 
