@@ -95,9 +95,10 @@ function eatPlanet(){
 const distancePlanet = dist(blackHole.x, blackHole.y, planet.x, planet.y);
 const planetIsOverlapping = distancePlanet < blackHole.w /2 + planet.w/2;
  if(planetIsOverlapping){
-    planet.w = 0;
-    planet.h = 0;
+    planet.y = random(50,450);
+    planet.x = random(50,450);
     blackHole.w+=5
     blackHole.h+=5
+
   }
 }
