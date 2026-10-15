@@ -1,18 +1,20 @@
 /**
- * Title of Project
+ * Growing Circle
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A circle grows over time and the player must press SPACE when it matches
+ * the size of the target circle
+ *
  */
 
 "use strict";
+// Variable of the target
 let targetCircle ={
     x:250,
     y:250,
     size:400
 }
-
+// Variable of the growing circle
 let growingCircle ={
     x:250,
     y:250,
@@ -23,13 +25,17 @@ let growingCircle ={
         g:150,
         b:150
     },
+    // Time between each size 
     delay: 5
 }
+// Allowed difference between both circles
 let offset = 15;
+// Message shown after pressing SPACE
 let message = "";
+// Stores the interval
 let growInterval;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas, starts the growing interval and adds the keyboard event listener
 */
 function setup() {
 createCanvas(500,500);
@@ -39,7 +45,7 @@ window.addEventListener("keydown", stopGrowing);
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the circles and result message
 */
 function draw() {
     background(200,200,100);
@@ -47,10 +53,9 @@ function draw() {
     drawGrowingCircle();
     textSize(30);
     text(message,190,35);
-    
 
 }
-
+// Draws the target circle
 function drawCircle(){
     push();
     strokeWeight(5);
@@ -58,7 +63,7 @@ function drawCircle(){
     ellipse(targetCircle.x,targetCircle.y,targetCircle.size);
     pop();
 }
-
+// // Draws the growing circle
 function drawGrowingCircle(){
     push();
     noStroke();
@@ -66,16 +71,22 @@ function drawGrowingCircle(){
     ellipse(growingCircle.x,growingCircle.y,growingCircle.size);
     pop();
 }
+
+// Increases the size of the growing circle
 function growCircle(){
     growingCircle.size++;
 }
-
+// Stops the circle from growing when SPACE is pressed and checks the result
 function stopGrowing(event){
     if(event.keyCode ===32){
         clearInterval(growInterval);
         result();
     }
 }
+
+ // Checks the circle size and gives the player some chance with the offset
+ // Displays if it is too small, too big, or close enough to the target
+ 
 function result(){
     if(targetCircle.size<=growingCircle.size + offset && targetCircle.size>=growingCircle.size - offset){
         message = "goodjob"

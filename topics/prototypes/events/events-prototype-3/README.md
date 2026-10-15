@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Growing Circle
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/events/events-prototype-3/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+The circle grows over time. Press SPACE to stop it as close as possible to the target circle
 
 ## Attribution
 
