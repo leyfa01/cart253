@@ -1,15 +1,15 @@
 /**
- * Title of Project
+ * Wake up the monster
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A sleeping monster reacts when the user moves the mouse
+ * The more the mouse moves, the more the monster wakes up
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Variable of the monster head
 */
 let monster ={
     x:250,
@@ -23,6 +23,7 @@ let monster ={
         b:10
     }
 }
+// Variable of the monster eyes
 let monsterEye ={
     x:170,
     y:220,
@@ -36,6 +37,8 @@ let monsterEye ={
     }
 }
 
+// Creates the canvas and adds the mouse movement event listener
+
 function setup() {
 createCanvas(500,500);
 
@@ -44,7 +47,7 @@ window.addEventListener("mousemove", wakeUpMonster);
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the background and the monster
 */
 function draw() {
     background(10,10,80);
@@ -52,7 +55,7 @@ function draw() {
     drawMonsterLeftEyes();
     drawMonsterRightEyes();
 }
-
+// function of the monster head
 function drawMonster(){
     push();
     strokeWeight(5);
@@ -60,6 +63,7 @@ function drawMonster(){
     ellipse(monster.x,monster.y,monster.w,monster.h)
     pop();
 }
+// function of the monster left eye
 function drawMonsterLeftEyes(){
     push();
     noStroke();
@@ -67,6 +71,7 @@ function drawMonsterLeftEyes(){
     ellipse(monsterEye.x,monsterEye.y,monsterEye.w,monsterEye.h)
     pop();
 }
+// function of the monster right eye
 function drawMonsterRightEyes(){
     push();
     noStroke();
@@ -74,7 +79,7 @@ function drawMonsterRightEyes(){
     ellipse(monsterEye.x+160,monsterEye.y,monsterEye.w,monsterEye.h)
     pop();
 }
-
+//  Opens the monster's eyes and changes its color when the mouse moves
 function wakeUpMonster(){
     if(monsterEye.h < 100){
         monsterEye.h++
