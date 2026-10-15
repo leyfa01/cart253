@@ -32,6 +32,7 @@ let blackHole = {
 
 function setup() {
   createCanvas(500, 500);
+  window.addEventListener("keydown", moveBlackHole)
 }
 
 /**
@@ -48,4 +49,18 @@ function drawBlackHole() {
   fill(blackHole.fill.r, blackHole.fill.g, blackHole.fill.b);
   ellipse(blackHole.x, blackHole.y, blackHole.w, blackHole.h);
   pop();
+}
+function moveBlackHole(){
+    if(keyCode===blackHole.keys.w){
+        blackHole.y-=5
+    }
+    if(keyCode===blackHole.keys.a){
+        blackHole.x-=5
+    }
+    if(keyCode===blackHole.keys.s){
+        blackHole.y+=5
+    }
+    if(keyCode===blackHole.keys.d){
+        blackHole.x+=5
+    }
 }
