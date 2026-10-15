@@ -23,7 +23,7 @@ let growingCircle ={
         g:150,
         b:150
     },
-    delay: 1000 
+    delay: 5
 }
 let growInterval;
 /**
@@ -32,6 +32,7 @@ let growInterval;
 function setup() {
 createCanvas(500,500);
 growInterval = setInterval(growCircle, growingCircle.delay);
+window.addEventListener("keydown", stopGrowing);
 }
 
 
@@ -42,7 +43,6 @@ function draw() {
     background(200,200,100);
     drawCircle();
     drawGrowingCircle();
-    growCircle();
 
 }
 
@@ -56,7 +56,7 @@ function drawCircle(){
 
 function drawGrowingCircle(){
     push();
-    noStroke;
+    noStroke();
     fill(growingCircle.fill.r,growingCircle.fill.g,growingCircle.fill.b);
     ellipse(growingCircle.x,growingCircle.y,growingCircle.size);
     pop();
@@ -65,8 +65,8 @@ function growCircle(){
     growingCircle.size++;
 }
 
-function stopGrowing(){
-    if(keyCode ===32){
+function stopGrowing(event){
+    if(event.keyCode ===32){
         clearInterval(growInterval);
     }
 }
