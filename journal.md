@@ -55,3 +55,19 @@ I hope someone playing my prototypes can quickly understand how to interact with
 <img src="images/conditional-prototype-1.png" alt="screenshot" width="200">
 <img src="images/conditional-prototype-2.png" alt="screenshot" width="200">
 <img src="images/conditional-prototype-3.png" alt="screenshot" width="200">
+
+### Events prototype - 10/14/2026
+
+While working on these three prototypes, I explored how different events can make a program respond to the user. I used mouse movement, keyboard controls, and time-based events to create different interactions.
+
+For my first prototype, Wake Up the Monster, I used mouse movement to make the monster react. As the user moves the mouse, the monster’s eyes open more and its body changes color. This helped me understand how an event can change variables and make the program feel more alive.
+
+For my second prototype, I made a black hole that moves with the WASD keys. The player has to move toward a planet and eat it. When the black hole touches the planet, the planet moves to a random position and changes color, while the black hole becomes bigger. I would have liked to make the movement smoother when pressing two keys at the same time, but I decided to keep it simple for this prototype.
+
+For my third prototype, I used setInterval() to make a circle grow over time. The player has to press SPACE when the growing circle is close to the target circle. The program then shows if the circle is too small, too big, or close enough. I also added an offset to give the player a small margin.
+
+What surprised me was how simple events can make basic shapes more interactive. I hope someone playing my prototypes can quickly understand each interaction and enjoy experimenting with them. I would like to develop the growing circle prototype further by adding more rounds and a score.
+
+<img src="images/events-prototype-1.png" alt="screenshot" width="200">
+<img src="images/events-prototype-2.png" alt="screenshot" width="200">
+<img src="images/events-prototype-3.png" alt="screenshot" width="200">
