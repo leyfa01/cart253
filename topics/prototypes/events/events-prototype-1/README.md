@@ -6,7 +6,7 @@ Leyna Feknous
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Move the mouse to wake up the monster. Its eyes open and its color changes as it wakes up.
 
 ## Attribution
 
