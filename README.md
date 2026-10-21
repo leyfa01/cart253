@@ -14,6 +14,7 @@
 - [Variables-challenge](topics/challenges/variables-challenge/)
 - [Conditions-challenge](topics/challenges/conditions-challenge/)
 - [Events-challenge](topics/challenges/events-challenge/)
+- [Functions-challenge](topics/challenges/functions-challenge/)
 
 ## All my prototypes
 
