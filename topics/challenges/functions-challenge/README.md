@@ -2,7 +2,7 @@
 
 Leyna Feknous
 
-[View this project online] (https://leyfa01.github.io/cart253/topics/challenges/functions-challenge/)
+[View this project online](https://leyfa01.github.io/cart253/topics/challenges/functions-challenge/)
 
 ## Description
 
