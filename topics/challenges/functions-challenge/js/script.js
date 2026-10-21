@@ -23,8 +23,9 @@ const ball = {
         y:0.01
     }
 };
+// Second ball
 const ball2 = {
-    x: 100,
+    x: 280,
     y: 10,
     width: 10,
     height: 10,
@@ -62,11 +63,14 @@ function draw() {
 
     movePaddle(paddle);
     moveBall(ball);
+    moveBall(ball2);
 
     handleBounce(ball, paddle);
+    handleBounce(ball2, paddle);
 
     drawPaddle(paddle);
     drawBall(ball);
+    drawBall(ball2);
 }
 
 /**
