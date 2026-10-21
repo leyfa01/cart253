@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# Bouncy Ball Ball Bonanza
 
 Leyna Feknous
 
@@ -6,7 +6,7 @@ Leyna Feknous
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+The starting point for a ball-bouncing experience of epic proportions!
 
 ## Attribution
 

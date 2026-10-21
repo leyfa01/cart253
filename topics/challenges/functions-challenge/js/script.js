@@ -55,7 +55,13 @@ function draw() {
  * Moves the paddle
  */
 function movePaddle(paddle) {
-
+    if(keyIsDown(LEFT_ARROW)===true){
+        paddle.x-=1
+    }
+    
+    if(keyIsDown(RIGHT_ARROW)===true){
+        paddle.x+=1
+    }
 }
 
 /**
