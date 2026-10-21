@@ -17,6 +17,10 @@ const ball = {
     velocity: {
         x: 0,
         y: 10
+    },
+    acceleration:{
+        x:0,
+        y:0.01
     }
 };
 
@@ -68,6 +72,10 @@ function movePaddle(paddle) {
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
+    ball.x += ball.velocity.x;
+    ball.y += ball.velocity.y;
+    ball.velocity.x += ball.acceleration.x;
+    ball.velocity.y += ball.acceleration.y;
 
 }
 
