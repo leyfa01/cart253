@@ -10,7 +10,7 @@
 
 // Stores the orb object
 let orb1=undefined;
-
+let point = 0;
 
 /**
  * Create the canvas and creates the starting orb
@@ -68,5 +68,14 @@ function drawOrb(orb){
     fill(orb.fill.r,orb.fill.g,orb.fill.b);
     ellipse(orb.x,orb.y,orb.size);
     pop();
+}
+
+function mousePressed(){
+    const distance = dist(mouseX, mouseY, orb1.x,orb1.y);
+    const isClicked = (distance < orb1.size/2);
+
+    if(isClicked){
+        orb1 = createOrb();
+    }
 }
 
