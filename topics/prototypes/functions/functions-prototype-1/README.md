@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# Catch the Orbs!
 
 AUTHOR NAME
 
@@ -6,7 +6,7 @@ AUTHOR NAME
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Catch the three moving orbs by clicking on them with your mouse. Each caught orb is replaced by a new orb with a random position and size.
 
 ## Attribution
 

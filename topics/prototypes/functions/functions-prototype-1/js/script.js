@@ -1,9 +1,9 @@
 /**
- * Title of Project
+ * Catch the Orbs!
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * When you click on an orb, it respawns in a new random position and size.
+ * The three orbs move unpredictably to create a buzzing effect.
  */
 
 "use strict";
@@ -15,7 +15,7 @@ let orb3=undefined;
 
 
 /**
- * Create the canvas and creates the starting orb
+ * Create the canvas and the starting orbs
 */
 function setup() {
     createCanvas(1000,600);
@@ -24,7 +24,7 @@ function setup() {
     orb3 = createOrb();
 }
 
-// Function that create and returns a new orb with random position and size
+// Create and return a new orb with a random position and size
 function createOrb(){
 let orb = {
 x: random(100,1000),
@@ -47,7 +47,7 @@ acceleration:{
 return orb;
 }
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Set the background color and update all orbs
 */
 function draw() {
 background(100,150,250);
@@ -56,13 +56,14 @@ updateOrb(orb1);
 updateOrb(orb2);
 updateOrb(orb3);
 }
+// Draw and move an orb
 function updateOrb(orb){
 drawOrb(orb);
 moveOrb(orb);
 }
-// Move the orb and create buzzing effect
+// Move the orb and create a buzzing effect
 function moveOrb(orb){
-    // Move the orb based on its velocity
+    // Update the orb's position using its velocity
     orb.x += orb.velocity.x;
     orb.y += orb.velocity.y;
     // Add random offsets
@@ -70,7 +71,7 @@ function moveOrb(orb){
     orb.y += random(-1.5, 1.5);
 
 }
-// Draws the orb
+// Draw the orb
 function drawOrb(orb){
     push();
     noStroke();
@@ -78,13 +79,17 @@ function drawOrb(orb){
     ellipse(orb.x,orb.y,orb.size);
     pop();
 }
+// Check whether the mouse click is inside the orb
+// Return a new orb if clicked; otherwise, return the original orb
 function checkDistance(orb){
     const distance = dist(mouseX, mouseY, orb.x,orb.y);
+    
     if (distance <orb.size/2){
         return createOrb();
     }
     return orb;
 }
+// Respawn any orbs clicked by the mouse
 function mousePressed(){
         orb1 = checkDistance(orb1);
         orb2 = checkDistance(orb2);
