@@ -10,7 +10,9 @@
 
 // Stores the orb object
 let orb1=undefined;
-let point = 0;
+let orb2=undefined;
+let orb3=undefined;
+
 
 /**
  * Create the canvas and creates the starting orb
@@ -18,6 +20,8 @@ let point = 0;
 function setup() {
     createCanvas(1000,600);
     orb1 = createOrb();
+    orb2 = createOrb();
+    orb3 = createOrb();
 }
 
 // Function that create and returns a new orb with random position and size
@@ -48,8 +52,13 @@ return orb;
 function draw() {
 background(100,150,250);
 
-drawOrb(orb1);
-moveOrb(orb1);
+updateOrb(orb1);
+updateOrb(orb2);
+updateOrb(orb3);
+}
+function updateOrb(orb){
+drawOrb(orb);
+moveOrb(orb);
 }
 // Move the orb and create buzzing effect
 function moveOrb(orb){
@@ -69,13 +78,16 @@ function drawOrb(orb){
     ellipse(orb.x,orb.y,orb.size);
     pop();
 }
-
-function mousePressed(){
-    const distance = dist(mouseX, mouseY, orb1.x,orb1.y);
-    const isClicked = (distance < orb1.size/2);
-
-    if(isClicked){
-        orb1 = createOrb();
+function checkDistance(orb){
+    const distance = dist(mouseX, mouseY, orb.x,orb.y);
+    if (distance <orb.size/2){
+        return createOrb();
     }
+    return orb;
+}
+function mousePressed(){
+        orb1 = checkDistance(orb1);
+        orb2 = checkDistance(orb2);
+        orb3 = checkDistance(orb3);
 }
 
