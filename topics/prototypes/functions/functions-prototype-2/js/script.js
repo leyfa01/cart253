@@ -61,7 +61,8 @@ updateObstacle(obstacle3);
 movePlayer(player);
 drawPlayer(player);
 
-// Check if the player collides with an obstacle if it does, then it's game over
+// Check if the player collides with an obstacle
+// if it does then it's game over
 if (
     checkCollision(player, obstacle1) ||
     checkCollision(player, obstacle2) ||
@@ -71,12 +72,12 @@ if (
   }
 
 }
-
+// Draw and move an obstacle
 function updateObstacle(obstacle){
 drawObstacle(obstacle);
 moveObstacle(obstacle);
 }
-
+// Move the obstacle downward and reset it when it leaves the screen
 function moveObstacle(obstacle){
     obstacle.y += obstacle.speed;
 
@@ -84,7 +85,7 @@ function moveObstacle(obstacle){
     obstacle.y = -obstacle.size.height;
   }
 }
-
+// Draw the obstacle
 function drawObstacle(obstacle){
     push();
     noStroke();
@@ -92,7 +93,7 @@ function drawObstacle(obstacle){
     rect(obstacle.x,obstacle.y,obstacle.size.width,obstacle.size.height);
     pop();
 }
-
+// Move the player using the left and right arrow keys
 function movePlayer(player){
   if (keyIsDown(LEFT_ARROW)) {
     player.x -= player.speed;
@@ -100,10 +101,10 @@ function movePlayer(player){
   if (keyIsDown(RIGHT_ARROW)) {
     player.x += player.speed;
   }
-
+// Keep the player inside the canvas
   player.x = constrain(player.x, player.size / 2, width - player.size / 2);
 }
-
+// Draw the player
 function drawPlayer(player){
   push();
   rectMode(CENTER);
@@ -112,7 +113,7 @@ function drawPlayer(player){
   rect(player.x, player.y, player.size, player.size);
   pop();
 }
-
+// Check if the player collides with an obstacle
 function checkCollision(player,obstacle){
     if(
         player.x + player.size > obstacle.x &&
@@ -124,7 +125,7 @@ function checkCollision(player,obstacle){
     }
     return false;
 }
-
+// Display the Game Over message
 function drawGameOver(){
     push();
     textSize(22);
