@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Don't Get Hit!
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-2/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Use the left and right arrow keys to move the green square and dodge the falling obstacles. If you collide with an obstacle, a Game Over screen appears and you must refresh the page to play again.
 
 ## Attribution
 

@@ -11,16 +11,17 @@ let obstacle1 = undefined;
 let obstacle2 = undefined;
 let obstacle3 = undefined;
 
+// Variable of the player
 let player ={
     x:250,
     y:750,
     size:30,
     speed:5
 }
-
+// Track whether the game is over
 let gameOver = false;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Create the canvas and initialize the obstacles
 */
 function setup() {
 createCanvas(500,800);
@@ -28,7 +29,7 @@ obstacle1 = createObstacle(200, -50, 6);
 obstacle2 = createObstacle(20, -150, 5);
 obstacle3 = createObstacle(320, -100, 4);
 }
-// Functions of the falling obstacle
+// Create and return an obstacle with a given position and speed
 function createObstacle(xPosition,yPosition,speed){
     let obstacle ={
         x: xPosition,
@@ -43,7 +44,7 @@ function createObstacle(xPosition,yPosition,speed){
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Update the game elements and check for collisions
 */
 function draw() {
 if (gameOver) {
@@ -60,6 +61,7 @@ updateObstacle(obstacle3);
 movePlayer(player);
 drawPlayer(player);
 
+// Check if the player collides with an obstacle if it does, then it's game over
 if (
     checkCollision(player, obstacle1) ||
     checkCollision(player, obstacle2) ||
