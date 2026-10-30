@@ -145,3 +145,33 @@
 [Growing Circle](https://leyfa01.github.io/cart253/topics/prototypes/events/events-prototype-3/)
 
 [Growing Circle Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/events/events-prototype-3/)
+
+### Catch the Orbs!
+
+<div>
+<img src="images/functions-prototype-1.png" alt="screenshot" width="200">
+</div>
+
+[Catch the Orbs!](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-1/)
+
+[Catch the Orbs! Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/functions/functions-prototype-1/)
+
+### Don't Get Hit!
+
+<div>
+<img src="images/functions-prototype-2.png" alt="screenshot" width="200">
+</div>
+
+[Don't Get Hit!](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-2/)
+
+[Don't Get Hit! Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/functions/functions-prototype-2/)
+
+### Red Light, Green Light
+
+<div>
+<img src="images/functions-prototype-3.png" alt="screenshot" width="200">
+</div>
+
+[Red Light, Green Light](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-3/)
+
+[Red Light, Green Light Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/functions/functions-prototype-3/)

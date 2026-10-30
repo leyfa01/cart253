@@ -71,3 +71,19 @@ What surprised me was how simple events can make basic shapes more interactive. 
 <img src="images/events-prototype-1.png" alt="screenshot" width="200">
 <img src="images/events-prototype-2.png" alt="screenshot" width="200">
 <img src="images/events-prototype-3.png" alt="screenshot" width="200">
+
+### Functions prototype - 10/29/2026
+
+In these three prototypes, I learned how functions can organize my code and make my programs easier to build. I used return values, helper functions, and parameters to create different interactions.
+
+For my first prototype, I used a function with a return value to create orbs with random positions, sizes, and speeds. When the user clicks on a orb, it disappears and a new one appears. What I found really cool was how one function could generate all the data for a new orb without repeating code.
+
+For my second prototype, I made a dodging game where the player uses the arrow keys to avoid falling obstacles. I separated my code into functions to move the player, loop the obstacles, and check collisions. When the player touches an obstacle, the screen turns red for game over.
+
+For my third prototype, Red Light, Green Light, I made a function with parameters for position, size, color, and text. A timer switches the light between green and red every two seconds. The player uses the right arrow key to reach the yellow finish line, and moving on red sends them back to the start. Crossing the line turns the screen green.
+
+At first, it was difficult to understand how parameters and return values pass data between functions while managing timers and game states. What surprised me was how much cleaner draw() looked once I separated each part of the game. I hope someone playing my prototypes can quickly understand the rules and enjoy them. I would like to develop Red Light, Green Light further by making the timer random so it is harder to predict.
+
+<img src="images/functions-prototype-1.png" alt="screenshot" width="200">
+<img src="images/functions-prototype-2.png" alt="screenshot" width="200">
+<img src="images/functions-prototype-3.png" alt="screenshot" width="200">
