@@ -1,60 +1,62 @@
 /**
- * Mr. Furious
+ * Title of Project
  * Leyna Feknous
- *
- * A guy who becomes visibly furious!
+ * 
+ * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
+ * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
 "use strict";
-
-// Our friend Mr. Furious
-let mrFurious = {
-  // Position and size
-  x: 200,
-  y: 200,
-  size: 100,
-  // Colour
-  fill: {
-    r: 255,
-    g: 255,
-    b: 255
-  }
-};
-
-let sky ={
-    fill:{
-        r:160,
-        g:180,
-        b:200
-    }
-}
-
+let obstacle1 = undefined;
+let obstacle2 = undefined;
+let obstacle3 = undefined;
 /**
- * Create the canvas
- */
+ * OH LOOK I DIDN'T DESCRIBE SETUP!!
+*/
 function setup() {
-  createCanvas(400, 400);
+createCanvas(500,800);
+obstacle1 = createObstacle(200, -50, 6);
+obstacle2 = createObstacle(20, -150, 5);
+obstacle3 = createObstacle(320, -100, 4);
+}
+// Functions of the falling obstacle
+function createObstacle(xPosition,yPosition,speed){
+    let obstacle ={
+        x: xPosition,
+        y: yPosition,
+        size: {
+            width:150,
+            height:20
+        },
+            
+        speed: speed
+    }
+    return obstacle;
 }
 
 /**
- * Draw (and update) Mr. Furious
- */
+ * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+*/
 function draw() {
-  background(sky.fill.r,sky.fill.g, sky.fill.b);
-  
+background(200,150,100);
+updateObstacle(obstacle1);
+updateObstacle(obstacle2);
+updateObstacle(obstacle3);
+}
 
- // Changing the color overtime
-  mrFurious.fill.g -= 1
-  mrFurious.fill.b -= 1
-  // Keep the value of the green and blue between 0 and 200
-  mrFurious.fill.g = constrain(mrFurious.fill.g, 0, 200);
-  mrFurious.fill.b = constrain(mrFurious.fill.b, 0, 200);
-  console.log(mrFurious.fill.g,mrFurious.fill.b);
-  
-  // Draw Mr. Furious as a coloured circle
-  push();
-  noStroke();
-  fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
-  ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
-  pop();
+function updateObstacle(obstacle){
+drawObstacle(obstacle);
+moveObstacle(obstacle);
+}
+
+function moveObstacle(obstacle){
+    obstacle.y += obstacle.speed;
+}
+
+function drawObstacle(obstacle){
+    push();
+    noStroke();
+    fill(100,200,300);
+    rect(obstacle.x,obstacle.y,obstacle.size.width,obstacle.size.height);
+    pop();
 }

@@ -2,7 +2,7 @@
 
 Leyna Feknous
 
-[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/functions/functionss-prototype-1/)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-1/)
 
 ## Description
 
