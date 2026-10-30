@@ -14,6 +14,8 @@ let player ={
     size:50,
     speed:4
 }
+let greenSignal = true;
+let timer = 0;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -28,16 +30,41 @@ function setup() {
 */
 function draw() {
 background(140,100,110);
+
+timer++;
+if(timer>120){
+    greenSignal = !greenSignal;
+    timer = 0;
+}
+if(greenSignal){
+drawSignal(width / 2, 80, 80, color(50, 220, 100), "GO !");
+} else {
+ drawSignal(width / 2, 80, 80, color(230, 50, 50), "STOP !");   
+}
+
 movePlayer(player);
 drawPlayer(player);
 }
 
-function signal(x,y,size,signalColor, text){
-
+function drawSignal(x,y,size,signalColor, labelText){
+    push();
+    noStroke();
+    fill(signalColor);
+    circle(x,y,size);
+    
+    fill(255);
+    textAlign(CENTER,CENTER);
+    text(labelText,x,y + size*0.8);
+    pop();
 }
 function movePlayer(player){
     if (keyIsDown(RIGHT_ARROW)) {
-    player.x += player.speed;
+        if(!greenSignal){
+            player.x = 60;
+        } else{
+            player.x += player.speed;
+        }
+    
   }
 }
 function drawPlayer(player){
