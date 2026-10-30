@@ -1,9 +1,9 @@
 /**
- * Title of Project
+ * Don't Get Hit!
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Avoid the falling obstacles by moving your player left and right.
+ * If an obstacle hits you, the game is over!
  */
 
 "use strict";
@@ -48,9 +48,11 @@ function createObstacle(xPosition,yPosition,speed){
 function draw() {
 if (gameOver) {
     background(220, 50, 50);
-  } else {
-    background(200, 150, 100);
+    drawGameOver();
+    return;
   }
+background(200, 150, 100);
+
 updateObstacle(obstacle1);
 updateObstacle(obstacle2);
 updateObstacle(obstacle3);
@@ -76,9 +78,9 @@ moveObstacle(obstacle);
 function moveObstacle(obstacle){
     obstacle.y += obstacle.speed;
 
-    if(obstacle.y > height){
-        obstacle.y = -obstacle.size.height;
-    }
+  if (obstacle.y > height) {
+    obstacle.y = -obstacle.size.height;
+  }
 }
 
 function drawObstacle(obstacle){
@@ -119,4 +121,13 @@ function checkCollision(player,obstacle){
         return true;
     }
     return false;
+}
+
+function drawGameOver(){
+    push();
+    textSize(22);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    text('GAME OVER, Refresh the page to play again', width / 2, height / 2);
+    pop();
 }
