@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Red Light, Green Light
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-3/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Use the right arrow key to move the blue square across the screen while watching the traffic light. Reach the yellow finish line without moving during the red signal to win the game!
 
 ## Attribution
 
