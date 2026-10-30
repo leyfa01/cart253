@@ -17,6 +17,8 @@ let player ={
     size:30,
     speed:5
 }
+
+let gameOver = false;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -44,13 +46,26 @@ function createObstacle(xPosition,yPosition,speed){
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-background(200,150,100);
+if (gameOver) {
+    background(220, 50, 50);
+  } else {
+    background(200, 150, 100);
+  }
 updateObstacle(obstacle1);
 updateObstacle(obstacle2);
 updateObstacle(obstacle3);
 
 movePlayer(player);
 drawPlayer(player);
+
+if (
+    checkCollision(player, obstacle1) ||
+    checkCollision(player, obstacle2) ||
+    checkCollision(player, obstacle3)
+  ) {
+    gameOver = true;
+  }
+
 }
 
 function updateObstacle(obstacle){
@@ -60,6 +75,10 @@ moveObstacle(obstacle);
 
 function moveObstacle(obstacle){
     obstacle.y += obstacle.speed;
+
+    if(obstacle.y > height){
+        obstacle.y = -obstacle.size.height;
+    }
 }
 
 function drawObstacle(obstacle){
@@ -88,4 +107,16 @@ function drawPlayer(player){
   fill(50, 220, 150);
   rect(player.x, player.y, player.size, player.size);
   pop();
+}
+
+function checkCollision(player,obstacle){
+    if(
+        player.x + player.size > obstacle.x &&
+        player.x < obstacle.x + obstacle.size.width &&
+        player.y + player.size > obstacle.y &&
+        player.y < obstacle.y + obstacle.size.height
+    ){
+        return true;
+    }
+    return false;
 }
