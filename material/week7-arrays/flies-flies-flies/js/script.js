@@ -9,26 +9,7 @@
 
 // Our array of flies (specifically "fly data" really)
 // Each fly has a position and a size
-let flies = [
-    {
-        x: 100,
-        y: 125,
-        size: 10,
-        buzziness: 2
-    },
-    {
-        x: 160,
-        y: 170,
-        size: 14,
-        buzziness: 4
-    },
-    {
-        x: 180,
-        y: 50,
-        size: 5,
-        buzziness: 6
-    }
-];
+let flies = [];
 
 /**
  * Creates the canvas
@@ -36,7 +17,19 @@ let flies = [
 function setup() {
     createCanvas(300, 300);
 }
-
+/**
+ * Returns a random fly!
+ */
+function createFly(){
+    // Generate a random fly
+    let fly = {
+        x: random(0, width),
+        y: random(0, height),
+        size: random(50),
+        buzziness: random(2,8)
+    };
+    return fly 
+}
 /**
  * Moves and displays the flies
  */
@@ -68,4 +61,30 @@ function drawFly(fly) {
     fill(0);
     ellipse(fly.x, fly.y, fly.size);
     pop();
+}
+/**
+ * Adds a random fly on a key press
+ */
+function keyPressed(){
+    // Create a new fly
+    const newFly = createFly();
+    // Add it to the array
+    flies.push(newFly);
+}
+/**
+ * Remove a fly from the array if clicked
+ */
+function mousePressed(){
+    // Check all the flies..
+    for (let fly of flies){
+        // for all the fly we calcul the distance between the mouse and the fly
+        const d = dist(mouseX, mouseY, fly.x, fly.y)
+        if( d < fly.size/2){
+            // This  fly was clicked
+            // Get the index of this fly
+            const index = flies.indexOf(fly);
+            // Splice it out of the array
+            flies.splice(index, 1);
+        }
+    }
 }
