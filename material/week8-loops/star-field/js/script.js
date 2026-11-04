@@ -7,17 +7,35 @@
 
 "use strict";
 
+const numStars = 1000;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Create a canvas
 */
 function setup() {
-
+    createCanvas(400,400);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the star-field
 */
 function draw() {
+    background(0);
 
+    randomSeed(10);
+    for (let i = 0; i < numStars; i++){
+        drawStar();
+    }
+}
+// Draws a random star
+function drawStar(){
+    const x = random(0, width);
+    const y = random(0, height);
+    const diameter = random(2,5);
+
+    push();
+    fill(255);
+    noStroke();
+    ellipse(x,y,diameter);
+    pop();
 }
