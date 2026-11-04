@@ -20,14 +20,24 @@ function setup() {
  */
 
 function draw() {
-  background("pink");
-
   let x = 0;
   let y = 0;
   let strokeShade = 0;
   let weightX = 1;
   let weightY = 1;
   let horizontalShade = 0;
+
+  // Gradient background
+  // 1px line with color mapped to the horizontal position
+  for (let i = 0; i <= width; i++) {
+    let r = map(i, 0, width, 250, 150);
+    let b = map(i, 0, width, 120, 250);
+    push();
+    strokeWeight(1);
+    stroke(r, 150, b);
+    line(i, 0, i, height);
+    pop();
+  }
 
   // Vertical lines that get lighter and thicker
   while (x <= width) {
@@ -40,20 +50,19 @@ function draw() {
     x += 50;
     strokeShade += 25;
     weightX += 1;
-    }
+  }
 
-    // Horizontal lines
-    // left end follows the mouse, right ends are evenly spaced
-    while (y <= height) {
-      push();
-      stroke(horizontalShade);
-      strokeWeight(weightY);
-      line(0, mouseY, width, y);
-      pop();
+  // Horizontal lines
+  // left end follows the mouse, right ends are evenly spaced
+  while (y <= height) {
+    push();
+    stroke(horizontalShade);
+    strokeWeight(weightY);
+    line(0, mouseY, width, y);
+    pop();
 
-      y += 50;
-      horizontalShade += 25;
-      weightY += 1;
-    }
-  
+    y += 50;
+    horizontalShade += 25;
+    weightY += 1;
+  }
 }
