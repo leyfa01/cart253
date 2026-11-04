@@ -1,6 +1,6 @@
 /**
- * Vertical circles
- * Pippin Barr
+ * Nine circles
+ * Leyna Feknous
  * 
  * Draws a series of circles from the top to the bottom of the canvas.
  * Arguably not in the most efficient way.
