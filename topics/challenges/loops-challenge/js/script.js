@@ -1,7 +1,7 @@
 /**
  * Lines
  * Leyna Feknous
- * 
+ *
  * A series of lines across the canvas
  */
 
@@ -11,7 +11,7 @@
  * Creates the canvas
  */
 function setup() {
-    createCanvas(500, 500);
+  createCanvas(500, 500);
 }
 
 /**
@@ -19,24 +19,41 @@ function setup() {
  * gradually lightening colour
  */
 
-
 function draw() {
-    background("pink");
+  background("pink");
 
   let x = 0;
+  let y = 0;
   let strokeShade = 0;
   let weightX = 1;
-  
-    // Vertical lines that get lighter and thicker
-    while (x <= width) {
+  let weightY = 1;
+  let horizontalShade = 0;
+
+  // Vertical lines that get lighter and thicker
+  while (x <= width) {
     push();
     stroke(strokeShade);
     strokeWeight(weightX);
     line(x, 0, x, height);
     pop();
-    
+
     x += 50;
     strokeShade += 25;
     weightX += 1;
-  }
+    }
+
+    // Horizontal lines
+    // left end follows the mouse, right ends are evenly spaced
+    while (y <= height) {
+      push();
+      stroke(horizontalShade);
+      strokeWeight(weightY);
+      line(0, mouseY, width, y);
+      pop();
+
+      y += 50;
+      horizontalShade += 25;
+      weightY += 1;
+    }
+  
 }
