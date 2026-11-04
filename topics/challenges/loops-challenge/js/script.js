@@ -18,39 +18,25 @@ function setup() {
  * Draws lines across the canvas with increasing thickness and
  * gradually lightening colour
  */
+
+
 function draw() {
     background("pink");
+
+  let x = 0;
+  let strokeShade = 0;
+  let weightX = 1;
+  
+    // Vertical lines that get lighter and thicker
+    while (x <= width) {
+    push();
+    stroke(strokeShade);
+    strokeWeight(weightX);
+    line(x, 0, x, height);
+    pop();
     
-    stroke(0);
-    line(0, 0, 0, height);
-    
-    stroke(25);
-    line(50, 0, 50, height);
-    
-    stroke(50);
-    line(100, 0, 100, height);
-    
-    stroke(75);
-    line(150, 0, 150, height);
-    
-    stroke(100);
-    line(200, 0, 200, height);
-    
-    stroke(125);
-    line(250, 0, 250, height);
-    
-    stroke(150);
-    line(300, 0, 300, height);
-    
-    stroke(175);
-    line(350, 0, 350, height);
-    
-    stroke(200);
-    line(400, 0, 400, height);
-    
-    stroke(225);
-    line(450, 0, 450, height);
-    
-    stroke(250);
-    line(500, 0, 500, height);
+    x += 50;
+    strokeShade += 25;
+    weightX += 1;
+  }
 }

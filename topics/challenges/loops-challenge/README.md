@@ -1,8 +1,8 @@
-# TITLE OF PROJECT
+# Loops challenge
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/challenges/loops-challenge/)
 
 ## Description
 
