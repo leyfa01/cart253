@@ -1,6 +1,6 @@
 /**
  * The Danger Zone
- * Pippin Barr
+ * Leyna Feknous
  * 
  * A world. A danger zone. A need to place our hero randomly  in the world
  * so that they don't land in the danger zone.
