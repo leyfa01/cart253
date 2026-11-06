@@ -38,6 +38,11 @@ function draw() {
     drawCookie();
 
     for (let ant of ants) {
+        moveAnt(ant);
+        drawAnt(ant);
+    }
+    
+    for (let ant of ants) {
         drawAnt(ant);
     }
 
@@ -77,4 +82,17 @@ function drawAnt(ant) {
     ellipse(ant.x, ant.y, ant.size * 0.8);
     ellipse(ant.x + ant.size * 0.7, ant.y, ant.size);
     pop();
+}
+
+function moveAnt(ant) {
+    // How far the ant is from the cookie
+    let dx = cookie.x - ant.x;
+    let dy = cookie.y - ant.y;
+    let distance = dist(ant.x, ant.y, cookie.x, cookie.y);
+
+    // Only move if the ant hasn't reached the cookie yet
+    if (distance > cookie.size / 2) {
+        ant.x = ant.x + (dx / distance) * ant.speed;
+        ant.y = ant.y + (dy / distance) * ant.speed;
+    }
 }
