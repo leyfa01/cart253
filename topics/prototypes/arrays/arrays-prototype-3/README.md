@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Cookie Defender
 
 Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/arrays/arrays-prototype-3/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+A small game where ants walk toward a cookie to eat it. Every ant is stored in an array, and the cookie gets smaller as they eat.
 
 ## Attribution
 

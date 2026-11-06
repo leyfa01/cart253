@@ -1,28 +1,35 @@
 /**
- * Title of Project
+ * Cookie Defender
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Click on the ants to squash them before they eat the cookie
+ * 
  */
 
 "use strict";
 
+// The cookie
 let cookie = {
     x: 300,
     y: 300,
     size: 150
 };
 
+// The ants
 let ants = [];
 
+// Number of ants
 let numAnts = 15;
+
+// How fast the cookie gets eaten
+let biteSize = 0.05;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas and the ants
 */
 function setup() {
     createCanvas(600, 600);
 
+    // Add the ants to the array
     for (let i = 0; i < numAnts; i++) {
         let ant = createAnt();
         ants.push(ant);
@@ -31,23 +38,35 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the game
 */
 function draw() {
     background("#e6d4c1");
     drawCookie();
 
+    // Check if the game is still going
+    let gameOn = cookie.size > 0 && ants.length > 0;
+
+    // Move and draw every ant
     for (let ant of ants) {
-        moveAnt(ant);
+        if (gameOn) {
+            moveAnt(ant);
+        }
         drawAnt(ant);
     }
-    
-    for (let ant of ants) {
-        drawAnt(ant);
+
+    // End messages
+    if (cookie.size <= 0) {
+        drawMessage("The ants ate the cookie!");
     }
+    else if (ants.length === 0) {
+        drawMessage("You saved the cookie!");
+    }
+
 
 }
 
+// Draws the cookie
 function drawCookie() {
     // Cookie
     push();
@@ -64,16 +83,18 @@ function drawCookie() {
     pop();
 }
 
+// Creates a new ant
 function createAnt() {
     let ant = {
         x: random(width),
         y: random([0, height]),
         size: 12,
-        speed: random(0.5, 1.5)
+        speed: random(1, 1.5)
     };
     return ant;
 }
 
+// Draws an ant
 function drawAnt(ant) {
     push();
     noStroke();
@@ -84,6 +105,7 @@ function drawAnt(ant) {
     pop();
 }
 
+// Moves an ant to the cookie or makes it eat
 function moveAnt(ant) {
     // How far the ant is from the cookie
     let dx = cookie.x - ant.x;
@@ -91,8 +113,37 @@ function moveAnt(ant) {
     let distance = dist(ant.x, ant.y, cookie.x, cookie.y);
 
     // Only move if the ant hasn't reached the cookie yet
-    if (distance > cookie.size / 2) {
+    if (distance > cookie.size / 2 + ant.size / 2) {
         ant.x = ant.x + (dx / distance) * ant.speed;
         ant.y = ant.y + (dy / distance) * ant.speed;
     }
+    // Eat the cookie
+    else {
+        cookie.size = max(cookie.size - biteSize, 0);
+    }
+}
+
+// Removes the ant when the player clicks
+function mousePressed() {
+    // Check every ant, backwards
+    for (let i = ants.length - 1; i >= 0; i--) {
+        let ant = ants[i];
+        let distance = dist(mouseX, mouseY, ant.x, ant.y);
+
+        // Remove the ant if clicked
+        if (distance < ant.size * 1.5) {
+            ants.splice(i, 1);
+            break;
+        }
+    }
+}
+
+// Draws a message
+function drawMessage(message) {
+    push();
+    fill(0);
+    textSize(36);
+    textAlign(CENTER, CENTER);
+    text(message, width / 2, 60);
+    pop();
 }
