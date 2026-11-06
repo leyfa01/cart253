@@ -48,3 +48,12 @@ function draw() {
     text(fruit.name, width / 2, height - 100);
     pop();
 }
+
+function mousePressed() {
+    currentIndex = currentIndex + 1;
+
+    // If we went past the last fruit, start again at the first one
+    if (currentIndex >= fruits.length) {
+        currentIndex = 0;
+    }
+}
