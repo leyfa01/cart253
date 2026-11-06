@@ -1,38 +1,49 @@
 /**
- * Flowers
+ * Plant & Bloom
  * Leyna Feknous
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Click anywhere to plant a flower. Each flower is stored
+ * in an array and has a random color and size.
  */
 
 "use strict";
 
+// Array that stores every flower created by a click
 let flowers  = [];
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas
 */
 function setup() {
-    createCanvas(500,400);
+    createCanvas(600,600);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the grass background and all the flowers in the array
 */
 function draw() {
 background("#a8e6a1");
+
+// Go through every flower and draw it
+for (let flower of flowers){
+    drawFlower(flower);
 }
 
+}
+
+// Draws one flower with a green stem and a colored head
+
 function drawFlower(flower){
+    // Stem
     push();
     stroke("#2d6a4f");
     strokeWeight(4);
     line(flower.x, flower.y, flower.x, flower.y + flower.maxSize /1);
     pop();
 
+    // Head
     push();
     noStroke();
     fill(flower.petalColor);
@@ -40,6 +51,8 @@ function drawFlower(flower){
     pop();
 
 }
+
+// Creates a new flower at the mouse position and adds it to the flowers array
 
 function mousePressed(){
     let flower ={
