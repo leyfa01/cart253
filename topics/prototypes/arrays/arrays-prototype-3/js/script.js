@@ -13,11 +13,20 @@ let cookie = {
     y: 300,
     size: 150
 };
+
+let ants = [];
+
+let numAnts = 15;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(600, 600);
+
+    for (let i = 0; i < numAnts; i++) {
+        let ant = createAnt();
+        ants.push(ant);
+    }
 }
 
 
@@ -25,8 +34,12 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#f5ebe0");
+    background("#e6d4c1");
     drawCookie();
+
+    for (let ant of ants) {
+        drawAnt(ant);
+    }
 
 }
 
@@ -43,5 +56,25 @@ function drawCookie() {
     ellipse(cookie.x + 25, cookie.y - 30, 12);
     ellipse(cookie.x + 10, cookie.y + 25, 14);
     ellipse(cookie.x - 25, cookie.y + 30, 10);
+    pop();
+}
+
+function createAnt() {
+    let ant = {
+        x: random(width),
+        y: random([0, height]),
+        size: 12,
+        speed: random(0.5, 1.5)
+    };
+    return ant;
+}
+
+function drawAnt(ant) {
+    push();
+    noStroke();
+    fill(0);
+    ellipse(ant.x - ant.size * 0.6, ant.y, ant.size * 0.6);
+    ellipse(ant.x, ant.y, ant.size * 0.8);
+    ellipse(ant.x + ant.size * 0.7, ant.y, ant.size);
     pop();
 }
