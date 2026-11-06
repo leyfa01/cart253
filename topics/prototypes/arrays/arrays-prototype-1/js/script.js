@@ -24,6 +24,20 @@ function setup() {
 */
 function draw() {
 background("#a8e6a1");
+}
+
+function drawFlower(flower){
+    push();
+    stroke("#2d6a4f");
+    strokeWeight(4);
+    line(flower.x, flower.y, flower.x, flower.y + flower.maxSize /1);
+    pop();
+
+    push();
+    noStroke();
+    fill(flower.petalColor);
+    ellipse(flower.x, flower.y, flower.maxSize);
+    pop();
 
 }
 
