@@ -1,12 +1,12 @@
-# TITLE OF PROJECT
+# Fruit Parade
 
-AUTHOR NAME
+Leyna Feknous
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://leyfa01.github.io/cart253/topics/prototypes/arrays/arrays-prototype-2/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Click to see the next fruit. Each fruit in the array has its own name, shape and colors.
 
 ## Attribution
 
