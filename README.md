@@ -175,3 +175,33 @@
 [Red Light, Green Light](https://leyfa01.github.io/cart253/topics/prototypes/functions/functions-prototype-3/)
 
 [Red Light, Green Light Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/functions/functions-prototype-3/)
+
+### Plant & Bloom
+
+<div>
+<img src="images/arrays-prototype-1.png" alt="screenshot" width="200">
+</div>
+
+[Plant & Bloom](https://leyfa01.github.io/cart253/topics/prototypes/arrays/arrays-prototype-1/)
+
+[Plant & Bloom Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/arrays/arrays-prototype-1/)
+
+### Fruit Parade
+
+<div>
+<img src="images/arrays-prototype-2.png" alt="screenshot" width="200">
+</div>
+
+[Fruit Parade](https://leyfa01.github.io/cart253/topics/prototypes/arrays/arrays-prototype-2/)
+
+[Fruit Parade Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/arrays/arrays-prototype-2/)
+
+### Cookie Defender
+
+<div>
+<img src="images/arrays-prototype-3.png" alt="screenshot" width="200">
+</div>
+
+[Cookie Defender](https://leyfa01.github.io/cart253/topics/prototypes/arrays/arrays-prototype-3/)
+
+[Cookie Defender Repositary](https://github.com/leyfa01/cart253/tree/main/topics/prototypes/arrays/arrays-prototype-3/)

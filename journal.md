@@ -87,3 +87,19 @@ At first, it was difficult to understand how parameters and return values pass d
 <img src="images/functions-prototype-1.png" alt="screenshot" width="200">
 <img src="images/functions-prototype-2.png" alt="screenshot" width="200">
 <img src="images/functions-prototype-3.png" alt="screenshot" width="200">
+
+### Arrays prototype - 11/06/2026
+
+In these three prototypes, I learned how arrays can store many elements in a single variable and make my programs grow without repeating code. I used push(), loops, indexes and splice() to add, display and remove elements.
+
+For my first prototype, Flower Field, the canvas starts as an empty field and every click plants a new flower. Each flower is an object with a random position, size and color that gets added to an array with push(). What surprised me most was that the same loop in draw() works whether there is one flower or three hundred.
+
+For my second prototype, Fruit Parade, I made an array of fruit objects that each have their own name, color, background and shape size. Instead of adding elements, I used an index to move through the array, and every click shows the next fruit. What I found really cool was that the same code in draw() can show any fruit just by changing the index. I used fruits.length to go back to the first fruit after the last one, so I can add more fruits without changing the code.
+
+For my third prototype, Cookie Defender, ants start at the top or bottom of the screen and walk toward a cookie to eat it. The player clicks on the ants to squash them, which removes them from the array with splice(). If the array is empty, the player wins, but if the cookie disappears, the ants win.
+
+I hope someone playing my prototypes can see how a simple list can become a whole system of elements. I would like to develop Cookie Defender further by making new ants arrive every few seconds so the game gets harder over time.
+
+<img src="images/arrays-prototype-1.png" alt="screenshot" width="200">
+<img src="images/arrays-prototype-2.png" alt="screenshot" width="200">
+<img src="images/arrays-prototype-3.png" alt="screenshot" width="200">
