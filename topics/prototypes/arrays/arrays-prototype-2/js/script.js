@@ -18,10 +18,10 @@ let fruits = [
 
 let currentIndex = 0;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates canvas
 */
 function setup() {
-
+    createCanvas(600,600);
 }
 
 
@@ -29,5 +29,22 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    let fruit = fruits[currentIndex];
 
+    background(fruit.background);
+
+    // Fruit shape
+    push();
+    noStroke();
+    fill(fruit.color);
+    ellipse(width / 2, height / 2, fruit.width, fruit.height);
+    pop();
+
+    // Fruit name
+    push();
+    fill(0);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text(fruit.name, width / 2, height - 100);
+    pop();
 }
