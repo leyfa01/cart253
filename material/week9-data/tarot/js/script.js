@@ -1,6 +1,6 @@
 /**
  * Tarot
- * Pippin Barr
+ * Leyna Feknous
  * 
  * Some experiments with data representing a Tarot deck
  */
