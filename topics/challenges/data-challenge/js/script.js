@@ -14,7 +14,7 @@
 let carData = undefined;
 let dinosaurData = undefined;
 let langData = undefined;
-let lang = "fr";
+let lang = "en";
 
 
 // Starts with the instruction
@@ -35,6 +35,13 @@ langData = await loadJSON("assets/data/lang.json")
 async function setup() {
     createCanvas(600, 400);
     await preload();
+    console.log(langData);
+    if (lang === "fr") {
+    carName = langData.instruction.fr;
+}
+    else if (lang === "en") {
+    carName = langData.instruction.en;
+}
 }
 
 /**
