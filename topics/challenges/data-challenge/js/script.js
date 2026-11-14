@@ -1,6 +1,6 @@
 /**
  * Terrible New Car
- * Pippin Barr
+ * Leyna Feknous
  * 
  * A program to generate new car model names using dinosaurs.
  * 
