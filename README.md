@@ -15,6 +15,7 @@
 - [Conditions-challenge](topics/challenges/conditions-challenge/)
 - [Events-challenge](topics/challenges/events-challenge/)
 - [Functions-challenge](topics/challenges/functions-challenge/)
+- [Data-challenge](topics/challenges/data-challenge/)
 
 ## All my prototypes
 
