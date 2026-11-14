@@ -1,0 +1,7 @@
+{
+    "description" : "English and French versions of the instructions",
+    "instruction" : {
+        "en" : "Click to generate a car name.",
+        "fr" : "Cliquez pour générer un nom d'une voiture."
+    }
+}
