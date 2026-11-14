@@ -16,6 +16,7 @@ let dinosaurData = undefined;
 let langData = undefined;
 let lang = "fr";
 
+
 // Starts with the instruction
 let carName = "Click to generate a car name.";
 
@@ -25,6 +26,7 @@ let carName = "Click to generate a car name.";
 async function preload() {
 carData = await loadJSON("assets/data/cars.json");
 dinosaurData = await loadJSON("assets/data/dinosaurs.json");
+langData = await loadJSON("assets/data/lang.json")
 }
 
 /**
